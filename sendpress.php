@@ -960,20 +960,17 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 			$plugin_name .= " ". __('Pro','sendpress');
 		}
 
-		add_menu_page($plugin_name, $plugin_name, $role,'sp-overview',  array(&$this,'render_view') , SENDPRESS_URL.'img/sendpress-bg-16.png');
-	    add_submenu_page('sp-overview', __('Overview','sendpress'), __('Overview','sendpress'), $role, 'sp-overview', array(&$this,'render_view'));
-	    $main = add_submenu_page('sp-overview', __('Emails','sendpress'), __('Emails','sendpress'), $role, 'sp-emails', array(&$this,'render_view'));
+		add_menu_page($plugin_name, $plugin_name, $role,'sp-emails',  array(&$this,'render_view') , SENDPRESS_URL.'img/sendpress-bg-16.png');
+	    $main = add_submenu_page('sp-emails', __('Emails','sendpress'), __('Emails','sendpress'), $role, 'sp-emails', array(&$this,'render_view'));
 	    
-	    add_submenu_page('sp-overview', __('Reports','sendpress'), __('Reports','sendpress'), $role, 'sp-reports', array(&$this,'render_view'));
-	   	add_submenu_page('sp-overview', __('Subscribers','sendpress'), __('Subscribers','sendpress'), $role, 'sp-subscribers', array(&$this,'render_view'));
-	    add_submenu_page('sp-overview', __('Queue','sendpress') ." ". $queue, __('Queue','sendpress')." ". $queue, $role, 'sp-queue', array(&$this,'render_view'));
-	   	add_submenu_page('sp-overview', __('Settings','sendpress'), __('Settings','sendpress'), $role, 'sp-settings', array(&$this,'render_view'));
+	    add_submenu_page('sp-emails', __('Reports','sendpress'), __('Reports','sendpress'), $role, 'sp-reports', array(&$this,'render_view'));
+	   	add_submenu_page('sp-emails', __('Subscribers','sendpress'), __('Subscribers','sendpress'), $role, 'sp-subscribers', array(&$this,'render_view'));
+	    add_submenu_page('sp-emails', __('Queue','sendpress') ." ". $queue, __('Queue','sendpress')." ". $queue, $role, 'sp-queue', array(&$this,'render_view'));
+	   	add_submenu_page('sp-emails', __('Settings','sendpress'), __('Settings','sendpress'), $role, 'sp-settings', array(&$this,'render_view'));
 	  
 	   	
 
-	   	add_submenu_page('sp-overview', __('Help','sendpress'), __('Help','sendpress'), $role, 'sp-help', array(&$this,'render_view'));
 	   
-	   add_submenu_page('sp-overview', __('Pro','sendpress'), __('Pro','sendpress'), $role, 'sp-pro', array(&$this,'render_view'));
 	   
 
 	   	if(SendPress_Option::get('feedback') == 'yes' || SendPress_Option::get('allow_tracking') == 'yes'){
@@ -990,15 +987,12 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 		//$queue = //SendPress_Data::emails_in_queue();
 
 		//add tabs
-		$view_class->add_tab( __('Overview','sendpress'), 'sp-overview', ($this->_page === 'sp-overview') );
 		$view_class->add_tab( __('Emails','sendpress'), 'sp-emails', ($this->_page === 'sp-emails') );
 		$view_class->add_tab( __('Reports','sendpress'), 'sp-reports', ($this->_page === 'sp-reports') );
 		$view_class->add_tab( __('Subscribers','sendpress'), 'sp-subscribers', ($this->_page === 'sp-subscribers') );
 		$view_class->add_tab( __('Queue','sendpress') . ' <small>('. $queue .')</small>', 'sp-queue', ($this->_page === 'sp-queue') );
 		$view_class->add_tab( __('Settings','sendpress'), 'sp-settings', ($this->_page === 'sp-settings') );
 		
-		$view_class->add_tab( __('Help','sendpress'), 'sp-help', ($this->_page === 'sp-help') );
-		$view_class->add_tab( __('Pro','sendpress'), 'sp-pro', ($this->_page === 'sp-pro') );
 		
 
 		$view_class->prerender( $this );
