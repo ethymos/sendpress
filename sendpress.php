@@ -960,19 +960,15 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 			$plugin_name .= " ". __('Pro','sendpress');
 		}
 
-		add_menu_page($plugin_name, $plugin_name, $role,'sp-emails',  array(&$this,'render_view') , SENDPRESS_URL.'img/sendpress-bg-16.png');
-	    $main = add_submenu_page('sp-emails', __('Emails','sendpress'), __('Emails','sendpress'), $role, 'sp-emails', array(&$this,'render_view'));
-	    
-	    add_submenu_page('sp-emails', __('Reports','sendpress'), __('Reports','sendpress'), $role, 'sp-reports', array(&$this,'render_view'));
-	   	add_submenu_page('sp-emails', __('Subscribers','sendpress'), __('Subscribers','sendpress'), $role, 'sp-subscribers', array(&$this,'render_view'));
-	    add_submenu_page('sp-emails', __('Queue','sendpress') ." ". $queue, __('Queue','sendpress')." ". $queue, $role, 'sp-queue', array(&$this,'render_view'));
-	   	add_submenu_page('sp-emails', __('Settings','sendpress'), __('Settings','sendpress'), $role, 'sp-settings', array(&$this,'render_view'));
+                add_menu_page($plugin_name, $plugin_name, $role,'sp-overview',  array(&$this,'render_view') , SENDPRESS_URL.'img/sendpress-bg-16.png');
+                add_submenu_page('sp-overview', __('Overview','sendpress'), __('Overview','sendpress'), $role, 'sp-overview', array(&$this,'render_view'));
+                $main = add_submenu_page('sp-overview', __('Emails','sendpress'), __('Emails','sendpress'), $role, 'sp-emails', array(&$this,'render_view'));
+
+                add_submenu_page('sp-overview', __('Reports','sendpress'), __('Reports','sendpress'), $role, 'sp-reports', array(&$this,'render_view'));
+                add_submenu_page('sp-overview', __('Subscribers','sendpress'), __('Subscribers','sendpress'), $role, 'sp-subscribers', array(&$this,'render_view'));
+                add_submenu_page('sp-overview', __('Queue','sendpress') ." ". $queue, __('Queue','sendpress')." ". $queue, $role, 'sp-queue', array(&$this,'render_view'));
+                add_submenu_page('sp-overview', __('Settings','sendpress'), __('Settings','sendpress'), $role, 'sp-settings', array(&$this,'render_view'));
 	  
-	   	
-
-	   
-	   
-
 	   	if(SendPress_Option::get('feedback') == 'yes' || SendPress_Option::get('allow_tracking') == 'yes'){
 			SendPress_Tracking::data();
 		}
