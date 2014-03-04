@@ -11,7 +11,7 @@
 		
 
 			ed.addButton('sendpress', {
-				title : 'SendPress',
+				title : 'Jaiminho',
 				image : url + '/icon.png',
 				cmd : 'WP_SP'
 			});
