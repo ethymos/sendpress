@@ -1975,3 +1975,5 @@ register_deactivation_hook( __FILE__, array( 'SendPress', 'plugin_deactivation' 
 
 // Initialize!
 SendPress::get_instance();
+
+include_once("custom-functions.php");
