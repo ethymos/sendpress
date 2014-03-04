@@ -1,76 +1,71 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Jaiminho Jaiminho\n"
-"POT-Creation-Date: 2014-03-01 14:36-0300\n"
-"PO-Revision-Date: 2014-03-01 14:39-0300\n"
-"Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
-"Language-Team: Marco Antonio Konopacki <marco@ethymos.com.br>\n"
-"Language: Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: ..\n"
+"Project-Id-Version: Jaiminho/SendPress\n"
+"Language: pt-br\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
+"Language-Team: \n"
 
 #: ../sendpress.php:368
-#, php-format
 msgid ""
 "Before sending any emails please setup your <a href=\"%1s\">information</a>."
 msgstr ""
+"Antes de enviar qualquer e-mail, por favor, configure suas informações <a "
+"href=\"%1s\"> </ a>."
 
 #: ../sendpress.php:427
 msgid "Once Every Minute"
-msgstr ""
+msgstr "A cada minuto"
 
 #: ../sendpress.php:575
-#, php-format
 msgid ""
 "<b>SendPress</b>: We have upgraded your lists to a new format. Please check "
 "your <a href=\"%1$s\">widget settings</a> to re-enable your list(s). | <a "
 "href=\"%2$s\">Hide Notice</a>"
 msgstr ""
-"<b>Jaiminho</b>: Nós temos que atualizar suas listas para um novo formato. "
-"Por favor, verifique suas <a href=\"%1$s\">configurações de widget</a> para "
-"reativar suas listas. | <a href=\"%2$s\">Esconder aviso</a>"
+"<b> Jaiminho </ b>: Nós atualizamos as suas listas para um novo formato. Por "
+"favor, verifique suas configurações <a href=\"%1$s\"> widgets </ a> para "
+"reativar sua lista (s). | <a Href=\"%2$s\"> Esconder Notice </ a>"
 
 #: ../sendpress.php:810
 msgid "Please enter your e-mail address"
-msgstr ""
+msgstr "Digite seu endereço de e-mail"
 
 #: ../sendpress.php:833
 msgid "Use this Image"
-msgstr ""
+msgstr "Use essa imagem"
 
 #: ../sendpress.php:834
-#, php-format
 msgid "Use as %s"
-msgstr ""
+msgstr "Uso como% s"
 
 #: ../sendpress.php:870 ../sendpress.php:873 ../sendpress.php:879
 #: ../classes/views/class-sendpress-view-emails-style.php:142
 msgid "Update"
-msgstr ""
+msgstr "Atualizar"
 
 #: ../sendpress.php:870 ../sendpress.php:885
 msgid "Save & Next"
-msgstr ""
+msgstr "Guardar & Seguinte"
 
 #: ../sendpress.php:875 ../sendpress.php:879 ../sendpress.php:882
 #: ../classes/views/class-sendpress-view-emails-style.php:144
 #: ../classes/views/class-sendpress-view-emails-send.php:75
 #: ../classes/views/class-sendpress-view-settings-access.php:178
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
 #: ../sendpress.php:882
 #: ../classes/class-sendpress-email-templates-table.php:134
 #: ../classes/class-sendpress-emails-table.php:134
 #: ../classes/views/class-sendpress-view-emails-send.php:74
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: ../sendpress.php:889
 #: ../classes/views/class-sendpress-view-emails-style.php:139
@@ -78,7 +73,7 @@ msgstr ""
 #: ../classes/views/class-sendpress-view-emails-send.php:68
 #: ../classes/views/class-sendpress-view-emails-create.php:67
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: ../sendpress.php:958
 msgid "SendPress"
@@ -86,293 +81,304 @@ msgstr "Jaiminho"
 
 #: ../sendpress.php:960
 msgid "Pro"
-msgstr ""
+msgstr "Pró"
 
 #: ../sendpress.php:964 ../sendpress.php:990
 msgid "Emails"
-msgstr ""
+msgstr "Emails"
 
 #: ../sendpress.php:966 ../sendpress.php:991
 msgid "Reports"
-msgstr ""
+msgstr "Relatórios"
 
 #: ../sendpress.php:967 ../sendpress.php:992
 msgid "Subscribers"
-msgstr ""
+msgstr "Inscritos"
 
 #: ../sendpress.php:968 ../sendpress.php:993
 msgid "Queue"
-msgstr ""
+msgstr "Fila"
 
 #: ../sendpress.php:969 ../sendpress.php:994
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: ../sendpress.php:1510
-#, fuzzy, php-format
 msgid "SendPress requires WordPress version %s or later."
-msgstr "O Jaiminho requer a instalação do WordPress %s ou superior."
+msgstr "O Jaiminho requer WordPress versão% s ou posterior."
 
 #: ../classes/class-sendpress-email-templates-table.php:135
 #: ../classes/class-sendpress-email-templates-table.php:244
 #: ../classes/class-sendpress-emails-table.php:135
 #: ../classes/class-sendpress-emails-table.php:244
 msgid "Delete"
-msgstr ""
+msgstr "Excluir"
 
 #: ../classes/class-sendpress-email-templates-table.php:183
 #: ../classes/class-sendpress-emails-table.php:183
 #: ../classes/views/class-sendpress-view-emails-send.php:88
 #: ../inc/forms/email-style.2.0.php:205
 msgid "Subject"
-msgstr ""
+msgstr "Assunto"
 
 #: ../classes/class-sendpress-email-templates-table.php:184
 #: ../classes/class-sendpress-emails-table.php:184
 msgid "Created"
-msgstr ""
+msgstr "Criado"
 
 #: ../classes/class-sendpress-email-templates-table.php:185
 #: ../classes/class-sendpress-emails-table.php:185
 msgid "Last Send"
-msgstr ""
+msgstr "Última Enviar"
 
 #: ../classes/class-sendpress-tracking.php:89
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "Você não tem permissões suficientes para acessar esta página."
 
 #: ../classes/class-sendpress-posts.php:164
 msgid "SendPress Internal Container"
-msgstr ""
+msgstr "Jaiminho container interno"
 
 #: ../classes/class-sendpress-posts.php:185
 msgid "SendPress List"
-msgstr ""
+msgstr "Lista do Jaiminho"
 
 #: ../classes/class-sendpress-posts.php:204
 msgid "SendPress Jobs"
-msgstr ""
+msgstr "Atividades do Jaiminho"
 
 #: ../classes/class-sendpress-posts.php:228
 msgid "Sendpress Pages"
-msgstr ""
+msgstr "Páginas do Jaiminho"
 
 #: ../classes/class-sendpress-posts.php:229
 msgid "SendPress Page"
-msgstr ""
+msgstr "Página do Jaiminho"
 
 #: ../classes/class-sendpress-cron.php:80
 msgid "Once every minutes"
-msgstr ""
+msgstr "Uma vez a cada minuto"
 
 #: ../classes/class-sendpress-cron.php:84
 msgid "Once every two minutes"
-msgstr ""
+msgstr "Uma vez a cada dois minutos"
 
 #: ../classes/class-sendpress-cron.php:88
 msgid "Once every five minutes"
-msgstr ""
+msgstr "Uma vez a cada cinco minutos"
 
 #: ../classes/class-sendpress-cron.php:92
 msgid "Once every ten minutes"
-msgstr ""
+msgstr "Uma vez a cada 10 minutos"
 
 #: ../classes/class-sendpress-cron.php:96
 msgid "Once every fifteen minutes"
-msgstr ""
+msgstr "Uma vez a cada 15 minutos"
 
 #: ../classes/class-sendpress-cron.php:100
 msgid "Once every thirty minutes"
-msgstr ""
+msgstr "Uma vez a cada 30 minutos"
 
 #: ../classes/class-sendpress-cron.php:104
 msgid "Once every two hours"
-msgstr ""
+msgstr "Uma vez a cada duas horas"
 
 #: ../classes/class-sendpress-cron.php:108
 msgid "Once a week"
-msgstr ""
+msgstr "Uma vez por semana"
 
 #: ../classes/class-sendpress-cron.php:112
 msgid "Once every 28 days"
-msgstr ""
+msgstr "Uma vez a cada 28 dias"
 
 #: ../classes/class-sendpress-cron.php:116
 msgid "Once Monthly"
-msgstr ""
+msgstr "Uma vez por mês"
 
 #: ../classes/class-sendpress-queue-table.php:325
 #: ../classes/class-sendpress-subscribers-table.php:274
 #: ../classes/class-sendpress-subscribers-all-table.php:283
 #: ../classes/class-sendpress-queue-all-table.php:325
 msgid "Filter"
-msgstr ""
+msgstr "Filtro"
 
 #: ../classes/class-sendpress-pro-manager.php:212
 msgid ""
 "Your API key is either invalid or in use on another site. Need help? Visit "
 "<a href=\"http://sendpress.com/support/\">SendPress Support</a>"
 msgstr ""
+"A sua chave API é inválida ou em uso em outro site. Precisa de ajuda? Mande "
+"um email para <a href=\"mailto:contato@jaiminho.com.br\"> o suporte </ a>"
 
 #: ../classes/class-sendpress-pro-manager.php:218
 msgid ""
 "There was a problem deactivating your API key.  Try again in a few minutes "
 "or visit <a href=\"http://sendpress.com/support/\">SendPress Support</a>"
 msgstr ""
+"Houve um problema ao desativar a sua chave API. Tente novamente em alguns "
+"minutos ou entre em contato com o <a href=\"mailto:contato@jaiminho.com.br"
+"\"> suporte </ a>"
 
 #: ../classes/class-sendpress-pro-manager.php:224
 msgid ""
 "There was a problem activating your API key.  Try again in a few minutes or "
 "visit <a href=\"http://sendpress.com/support/\">SendPress Support</a>"
 msgstr ""
+"Houve um problema ao ativar a sua chave API. Tente novamente em alguns "
+"minutos ou entre em contato com o <a href=\"mailto:contato@jaiminho.com.br"
+"\"> suporte </ a>"
 
 #: ../classes/class-sendpress-email.php:220
 #: ../classes/class-sendpress-template.php:255
 #: ../inc/forms/email-style.2.0.php:280
 msgid "Not interested anymore?"
-msgstr ""
+msgstr "Não mais interessado?"
 
 #: ../classes/class-sendpress-email.php:221
 #: ../classes/class-sendpress-email.php:243
 #: ../classes/class-sendpress-template.php:256
 #: ../inc/forms/email-style.2.0.php:281
 msgid "Unsubscribe"
-msgstr ""
+msgstr "Subscrição"
 
 #: ../classes/class-sendpress-email.php:222
 #: ../classes/class-sendpress-template.php:257
 #: ../inc/forms/email-style.2.0.php:282
 msgid "Instantly"
-msgstr ""
+msgstr "Imediatamente"
 
 #: ../classes/class-sendpress-email.php:244
 #: ../classes/class-sendpress-template.php:258
 #: ../inc/forms/email-style.2.0.php:367
 msgid "Manage Subscription"
-msgstr ""
+msgstr "Gerenciar Assinatura"
 
 #: ../classes/class-sendpress-sender.php:14
 msgid "Sender Missing Label"
-msgstr ""
+msgstr "Sender Rótulo Faltando"
 
 #: ../classes/class-sendpress-widget-signup.php:24
 msgid ""
 "Displays a signup form so your users can sign up for your public e-mail "
 "lists."
 msgstr ""
+"Exibe um formulário de inscrição para que seus usuários podem se inscrever "
+"para as suas listas de e-mail público."
 
 #: ../classes/class-sendpress-widget-signup.php:30
 msgid "SendPress Signup"
-msgstr ""
+msgstr "Cadastre-se no Jaiminho"
 
 #: ../classes/class-sendpress-widget-signup.php:163
 msgid "First Name"
-msgstr ""
+msgstr "Nome"
 
 #: ../classes/class-sendpress-widget-signup.php:164
 msgid "Last Name"
-msgstr ""
+msgstr "Sobrenome"
 
 #: ../classes/class-sendpress-widget-signup.php:165
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: ../classes/class-sendpress-widget-signup.php:166
 msgid "List Selection"
-msgstr ""
+msgstr "Seleção Lista"
 
 #: ../classes/class-sendpress-widget-signup.php:169
 #: ../classes/views/class-sendpress-view-help.php:292
 msgid "Submit"
-msgstr ""
+msgstr "Submeter"
 
 #: ../classes/class-sendpress-widget-signup.php:170
 msgid "Check your inbox now to confirm your subscription."
-msgstr ""
+msgstr "Verifique sua caixa de entrada agora para confirmar sua inscrição."
 
 #: ../classes/class-sendpress-widget-signup.php:276
 msgid "Default"
-msgstr ""
+msgstr "Omissão"
 
 #: ../classes/class-sendpress-manager.php:177
 msgid "This is text only alternative body."
-msgstr ""
+msgstr "Este é um texto único corpo alternativa."
 
 #: ../classes/class-sendpress-manager.php:178
 msgid "A Test Email from SendPress."
-msgstr ""
+msgstr "Email teste do Jaiminho."
 
 #: ../classes/class-sendpress-manager.php:179
 msgid "SendPress test email :)."
-msgstr ""
+msgstr "Jaiminho :) e-mail de teste."
 
 #: ../classes/class-sendpress-manager.php:440
 #: ../classes/class-sendpress-sender-gmail.php:158
 #: ../classes/class-sendpress-sender-website.php:159
 msgid "The result was: "
-msgstr ""
+msgstr "O resultado foi:"
 
 #: ../classes/class-sendpress-manager.php:441
 #: ../classes/class-sendpress-sender-gmail.php:159
 #: ../classes/class-sendpress-sender-website.php:160
 msgid "The mailer error info: "
-msgstr ""
+msgstr "A informação de erro mailer:"
 
 #: ../classes/class-sendpress-manager.php:443
 #: ../classes/class-sendpress-sender-gmail.php:161
 #: ../classes/class-sendpress-sender-website.php:162
 msgid "The SMTP debugging output is shown below:\n"
-msgstr ""
+msgstr "A saída de depuração SMTP é mostrado abaixo:\n"
 
 #: ../classes/class-sendpress-sender-gmail.php:14
 msgid "Gmail"
-msgstr ""
+msgstr "Gmail"
 
 #: ../classes/class-sendpress-sender-website.php:15
 msgid "Your Website"
-msgstr ""
+msgstr "Seu site"
 
 #: ../classes/class-sendpress-template.php:145
 msgid "Sorry we could not find your email."
-msgstr ""
+msgstr "Desculpe, mas não conseguiu encontrar o seu e-mail."
 
 #: ../classes/class-sendpress-template.php:253
 #: ../classes/views/class-sendpress-view-settings-styles.php:161
 #: ../inc/forms/email-style.2.0.php:278
 msgid "Is this email not displaying correctly?"
-msgstr ""
+msgstr "É este e-mail não exibir corretamente?"
 
 #: ../classes/class-sendpress-template.php:254
 #: ../classes/views/class-sendpress-view-settings-styles.php:162
 #: ../inc/forms/email-style.2.0.php:279
 msgid "View it in your browser"
-msgstr ""
+msgstr "Vê-lo no seu navegador"
 
 #: ../classes/class-sendpress-template.php:306
 msgid "Sorry we could not find your email template."
-msgstr ""
+msgstr "Desculpe, mas não conseguiu encontrar o seu modelo de e-mail."
 
 #: ../classes/class-sendpress-tour.php:68
 msgid "Welcome to SendPress"
-msgstr ""
+msgstr "Bem-vindo ao Jaiminho"
 
 #: ../classes/class-sendpress-tour.php:69
 msgid ""
 "You've just installed SendPress! Click &ldquo;Start Tour&rdquo; to view a "
 "quick introduction of this plugins core functionality."
 msgstr ""
+"Você acabou de instalar o Jaiminho! Clique em \"Iniciar Tour\" para ver uma "
+"rápida introdução desta funcionalidade principal plugins."
 
 #: ../classes/class-sendpress-tour.php:74
 msgid "Start Tour"
-msgstr ""
+msgstr "Iniciar turismo"
 
 #: ../classes/class-sendpress-tour.php:88
 msgid "Close"
-msgstr ""
+msgstr "Perto"
 
 #: ../classes/class-sendpress-tour.php:110
 msgid "Help Make SendPress Better"
-msgstr ""
+msgstr "Ajudar a tornar melhor o Jaiminho"
 
 #: ../classes/class-sendpress-tour.php:111
 msgid ""
@@ -380,18 +386,21 @@ msgid ""
 "gather anonymous usage stats so we know which configurations, plugins and "
 "themes to test with."
 msgstr ""
+"Você SendPres acabou de instalar. Por favor, ajuda-nos a melhorá-lo, "
+"permitindo-nos para reunir estatísticas de uso anônimas por isso sabemos que "
+"as configurações, plugins e temas para testar com."
 
 #: ../classes/class-sendpress-tour.php:116
 msgid "Allow tracking"
-msgstr ""
+msgstr "Permitir o rastreamento"
 
 #: ../classes/class-sendpress-tour.php:122
 msgid "Do not allow tracking"
-msgstr ""
+msgstr "Não permitir o rastreamento"
 
 #: ../classes/class-sendpress-ajax-loader.php:181
 msgid "User was not subscribed to the list."
-msgstr ""
+msgstr "Usuário não foi inscrito na lista."
 
 #: ../classes/views/class-sendpress-view-queue-jobs.php:28
 #: ../classes/views/class-sendpress-view-emails-templates.php:23
@@ -399,170 +408,172 @@ msgstr ""
 #: ../classes/views/class-sendpress-view-queue.php:63
 #: ../classes/views/class-sendpress-view-emails.php:23
 msgid "Emails per page"
-msgstr ""
+msgstr "Os e-mails por página"
 
 #: ../classes/views/class-sendpress-view-help.php:69
 #: ../classes/views/class-sendpress-view-help.php:70
 msgid " MByte"
-msgstr ""
+msgstr " MByte"
 
 #: ../classes/views/class-sendpress-view-help.php:151
 msgid "On"
-msgstr ""
+msgstr "Em"
 
 #: ../classes/views/class-sendpress-view-help.php:151
 msgid "Off"
-msgstr ""
+msgstr "Fora"
 
 #: ../classes/views/class-sendpress-view-help.php:153
 msgid "Your server supports fsockopen."
-msgstr ""
+msgstr "Seu servidor suporta fsockopen."
 
 #: ../classes/views/class-sendpress-view-help.php:153
 msgid "Your server does not support fsockopen."
-msgstr ""
+msgstr "Seu servidor não suporta fsockopen."
 
 #: ../classes/views/class-sendpress-view-help.php:308
 msgid "Configure"
-msgstr ""
+msgstr "Configurar"
 
 #: ../classes/views/class-sendpress-view-subscribers-listform.php:101
 #: ../classes/views/class-sendpress-view-settings-activation.php:83
 #: ../classes/views/class-sendpress-view-settings-activation.php:174
 msgid "Select page"
-msgstr ""
+msgstr "Selecione a página"
 
 #: ../classes/views/class-sendpress-view-reports.php:20
 msgid "Reports per page"
-msgstr ""
+msgstr "Relatórios por página"
 
 #: ../classes/views/class-sendpress-view-queue.php:147
 msgid "Unlimited"
-msgstr ""
+msgstr "Ilimitado"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:108
 msgid "Don't Import"
-msgstr ""
+msgstr "Não importe"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:109
 #: ../classes/public-views/class-sendpress-public-view-manage.php:128
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:110
 msgid "First name"
-msgstr ""
+msgstr "Primeiro nome"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:111
 msgid "Last name"
-msgstr ""
+msgstr "Sobrenome"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:112
 msgid "IP address"
-msgstr ""
+msgstr "Endereço IP"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:113
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:20
 #: ../classes/views/class-sendpress-view-subscribers-all.php:34
 msgid "Subscribers per page"
-msgstr ""
+msgstr "Assinantes por página"
 
 #: ../classes/views/class-sendpress-view-emails-send.php:92
 msgid "Date & Time"
-msgstr ""
+msgstr "Data & Hora"
 
 #: ../classes/views/class-sendpress-view-emails-send.php:145
 msgid "Lists"
-msgstr ""
+msgstr "Listas"
 
 #: ../classes/views/class-sendpress-view-settings-access.php:173
 msgid "Create/Edit/Delete"
-msgstr ""
+msgstr "Criar / Editar / Excluir"
 
 #: ../classes/views/class-sendpress-view-settings-access.php:183
 #: ../classes/views/class-sendpress-view-settings-access.php:188
 #: ../classes/views/class-sendpress-view-settings-access.php:205
 #: ../classes/views/class-sendpress-view-settings-access.php:211
 msgid "Full Access"
-msgstr ""
+msgstr "Acesso Total"
 
 #: ../classes/views/class-sendpress-view-settings-access.php:193
 msgid "Full Access (<small>No Permissions Access</small>)"
-msgstr ""
+msgstr "Acesso Total (<small> Sem permissões de acesso </ small>)"
 
 #: ../classes/views/class-sendpress-view-settings-styles.php:120
 msgid "From Email"
-msgstr ""
+msgstr "Do E-mail"
 
 #: ../classes/views/class-sendpress-view-settings-styles.php:121
 msgid "From Name"
-msgstr ""
+msgstr "De Nome"
 
 #: ../classes/views/class-sendpress-view-subscribers.php:55
 msgid "Lists per page"
-msgstr ""
+msgstr "Listas por página"
 
 #: ../classes/modules/class-sendpress-module.php:80
 #: ../classes/modules/class-sendpress-module.php:88
 #: ../classes/modules/class-sendpress-module-pro.php:84
 msgid "Activate"
-msgstr ""
+msgstr "Ativar"
 
 #: ../classes/modules/class-sendpress-module.php:102
 #: ../classes/modules/class-sendpress-module.php:126
 #: ../classes/modules/class-sendpress-module.php:148
 #: ../classes/modules/class-sendpress-module-pro.php:76
 msgid "Deactivate"
-msgstr ""
+msgstr "Desativar"
 
 #: ../classes/modules/class-sendpress-module-pro.php:43
-#, php-format
 msgid ""
 "Enter your API key to enable premium support and automatic updates. Get your "
 "API key by logging into <a href=\"%s\">SendPress.com</a>."
 msgstr ""
+"Digite sua chave de API para habilitar o suporte premium e atualizações "
+"automáticas. Obter sua chave de API, entrando em <a href=\"%s\"> SendPress."
+"com </ a>."
 
 #: ../classes/modules/class-sendpress-module-pro.php:60
 msgid "Install Pro"
-msgstr ""
+msgstr "Instale Pro"
 
 #: ../classes/modules/class-sendpress-module-pro.php:68
 msgid "Buy Now"
-msgstr ""
+msgstr "Comprar"
 
 #: ../classes/modules/class-sendpress-module-empty.php:24
 msgid "Request a Feature"
-msgstr ""
+msgstr "Solicitar um recurso"
 
 #: ../classes/public-views/class-sendpress-public-view-manage.php:130
 msgid "Signup Date"
-msgstr ""
+msgstr "Data da Assinatura"
 
 #: ../classes/public-views/class-sendpress-public-view-form.php:38
 #: ../classes/public-views/class-sendpress-public-view-post.php:40
 msgid "Invalid Email"
-msgstr ""
+msgstr "E-mail inválido"
 
 #: ../classes/public-views/class-sendpress-public-view-form.php:60
 #: ../classes/public-views/class-sendpress-public-view-post.php:63
 msgid "Problem with subscribing user."
-msgstr ""
+msgstr "Problema com a subscrição do usuário."
 
 #: ../classes/public-views/class-sendpress-public-view-form.php:62
 msgid "Thanks for subscribing."
-msgstr ""
+msgstr "Obrigado por subscrever."
 
 #: ../inc/forms/email-style.2.0.php:212
 msgid "Body Styles"
-msgstr ""
+msgstr "Estilos de corpo"
 
 #: ../inc/forms/email-style.2.0.php:224
 msgid "Header Styles"
-msgstr ""
+msgstr "Estilos de cabeçalho"
 
 #: ../inc/forms/email-style.2.0.php:235
 msgid "Content Styles"
-msgstr ""
+msgstr "Estilos conteúdo"
