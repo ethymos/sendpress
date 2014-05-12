@@ -178,7 +178,7 @@ list( $display_version ) = explode( '-', $wp_version );
   </div>
 
 <div class="sp-row">
-<div class="sp-33 sp-first">
+<div class="sp-50 sp-first">
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Recent Subscribers</h3>
@@ -209,7 +209,7 @@ list( $display_version ) = explode( '-', $wp_version );
   </div>
 </div>
 </div>
-<div class="sp-33">
+<div class="sp-50">
 	<div class="panel panel-default">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">Most Active Subscribers</h3>
@@ -229,20 +229,6 @@ list( $display_version ) = explode( '-', $wp_version );
       }
   		}
 	  	?>
-	  	</ul>
-	  </div>
-	</div>
-</div>
-<div class="sp-33">
-	<div class="panel panel-default">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">Go Pro!</h3>
-	  </div>
-	  <div class="panel-body">
-	  	<ul>
-	  		<li><a href="http://sendpress.com/purchase-pricing/">Advanced Reports</a></li>
-	  		<li><a href="http://sendpress.com/purchase-pricing/">Check Spam Scores</a></li>
-	  		<li><a href="http://sendpress.com/purchase-pricing/">Post Notifications</a></li>
 	  	</ul>
 	  </div>
 	</div>
