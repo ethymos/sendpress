@@ -137,7 +137,7 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
   </div>
   <div class="panel-body">
 <div class="boxer form-box">
-  <div style="float: right; width: 45%;">
+  <div>
     <h2>Email Sending Limits</h2>
     
 <?php
@@ -193,32 +193,7 @@ Older versions of SendPress used "quoted-printable"
 
   <br class="clear">
   </div>  
-  <div style="width: 45%; margin-right: 10%">
-    <?php $tl =  SendPress_Option::get('autocron','no'); ?>
-    <h2>SendPress Pro Auto Cron</h2>
-    <p>At least once every hour we visit your site, just like a "cron" job.<br>There's no setup involved. Easy and hassle free.</p>
-
-    <button id="sp-enable-cron" <?php if($tl == 'yes'){ echo "style='display:none;'";} ?> class="btn  btn-success">Enable Pro Auto Cron</button><button id="sp-disable-cron" <?php if($tl == 'no'){ echo "style='display:none;'";} ?> class="btn  btn-danger">Disable Pro Auto Cron</button>
-    <br>
-    <p class="well">
-      <strong>Without SendPress Pro</strong><br>
-      Auto Cron is limited to a max of <strong>3,000*</strong> emails per day at a max rate of <strong>125*</strong> emails per hour.
-      <br><br>
-      <strong>With SendPress Pro</strong><br>
-      Auto Cron starts at a max of <strong>12,000*</strong> emails per day at a max rate of <strong>500*</strong> emails per hour. Sending of up to <strong>36,000*</strong> emails a day available provided your server can handle it. <br><br><br>
-      <strong>*</strong>Auto Cron will not send faster then your <strong>Email Sending Limits</strong> to the right.<br>Please make sure you follow the rules of your hosting provider or upgrade to <strong><a href="http://sendpress.com">SendPress Pro</a></strong> to use a third-party service.
-    </p>
-    <small>Pro Auto Cron does collect some data about your website and usage of SendPress. It will not track any user details, so your security and privacy are safe with us.</small>
-
-
-
-<!--
-  WordPress Cron: Next run @ <?php
-echo date_i18n( get_option('date_format') .' '. get_option('time_format'), $local_timestamp);
-?><br><br>-->
-
-  <br class="clear">
-  </div>
+  
 </div>
 </div>
 </div>
