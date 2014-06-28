@@ -53,7 +53,7 @@ list( $display_version ) = explode( '-', $wp_version );
                   </div>
                   <div class="w-50 pull-left text-right">
                     <p class="announcement-heading"><?php echo SendPress_Data::bd_nice_number(SendPress_Data::get_count_subscribers()); ?></p>
-                    <p class="announcement-text">Subscribers</p>
+                    <p class="announcement-text"><?php _e('Subscribers'); ?></p>
                   </div>
                   	<br class="clear">
               </div>
@@ -181,7 +181,7 @@ list( $display_version ) = explode( '-', $wp_version );
 <div class="sp-50 sp-first">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Recent Subscribers</h3>
+    <h3 class="panel-title"><?php _e('Recent Subscribers'); ?></h3>
   </div>
   <div class="panel-body">
   	<ul>
@@ -212,7 +212,7 @@ list( $display_version ) = explode( '-', $wp_version );
 <div class="sp-50">
 	<div class="panel panel-default">
 	  <div class="panel-heading">
-	    <h3 class="panel-title">Most Active Subscribers</h3>
+	    <h3 class="panel-title"><?php _e('Most Active Subscribers'); ?></h3>
 	  </div>
 	  <div class="panel-body">
 	  	<ul>

@@ -61,7 +61,7 @@ class SendPress_View_Subscribers_Listedit extends SendPress_View_Subscribers {
 	   	 		$d = 'checked';
 	   	 	}
 	   	?>
-	   	<input type="radio" name="sync_role" value="none" <?php echo $d; ?> /> SendPress List ( Use this to have subscribers sign up, import csv, etc.  )<br><br>
+	   	<input type="radio" name="sync_role" value="none" <?php echo $d; ?> /> <?php _e('SendPress List ( Use this to have subscribers sign up, import csv, etc.  )'); ?><br><br>
 	   	<?php
 	   	 foreach (get_editable_roles() as $role_name => $role_info):
 	   	 	$d ='';

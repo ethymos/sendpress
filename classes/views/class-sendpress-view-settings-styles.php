@@ -126,7 +126,7 @@ $fn = __('From Name','sendpress');
 	<a href="<?php echo SendPress_Admin::link('Settings_Styles'); ?>" class="btn btn-default btn-large" ><i class="icon-remove"></i> <?php _e('Cancel','sendpress'); ?></a> <a href="#" id="save-update" class="btn btn-primary btn-large"><i class="icon-white icon-ok"></i> <?php _e('Save','sendpress'); ?></a>
 </div>
 <br class="clear">
-<h3>Required Settings</h3>
+<h3><?php _e('Required Settings'); ?></h3>
 <div class="boxer form-box">
 <div style="float: right; width: 45%;">
 	<h4 class="nomargin"><?php _e('From Email','sendpress'); ?></h4>
@@ -141,7 +141,7 @@ $fn = __('From Name','sendpress');
 </div>
 
 <br class="clear">
-<h3>Optional Settings</h3>
+<h3><?php _e('Optional Settings'); ?></h3>
 		<?php 
         define('SENDPRESS_STYLER_PAGE',true);
         require_once( SENDPRESS_PATH. 'inc/forms/email-style.2.0.php' ); ?>
