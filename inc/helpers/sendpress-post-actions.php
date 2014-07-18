@@ -230,12 +230,28 @@ switch ( $this->_current_action ) {
             $fromemail = 'wordpress@' . $sitename;
         }
 
+        if(isset($_POST['bounceemail'])){
+            $bounceemail= $_POST['bounceemail'];
+        }
+
+
+        if ( !isset( $bounceemail ) ) {
+            // Get the site domain and get rid of www.
+            $sitename = strtolower( $_SERVER['SERVER_NAME'] );
+            if ( substr( $sitename, 0, 4 ) == 'www.' ) {
+                $sitename = substr( $sitename, 4 );
+            }
+
+            $bounceemail = 'bounce@' . $sitename;
+        }
+
         SendPress_Option::set('canspam', $canspam);
         SendPress_Option::set('linkedin', $linkedin);
         SendPress_Option::set('facebook', $facebook);
         SendPress_Option::set('twitter', $twitter);
         SendPress_Option::set('fromemail', $fromemail );
         SendPress_Option::set('fromname', $fromname );
+        SendPress_Option::set('bounceemail', $bounceemail );
 
          wp_redirect( admin_url('admin.php?page=sp-settings') );
 

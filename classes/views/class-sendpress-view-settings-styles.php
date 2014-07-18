@@ -93,12 +93,27 @@ class SendPress_View_Settings_Styles extends SendPress_View_Settings {
             $fromemail = 'wordpress@' . $sitename;
         }
 
+        if(isset($_POST['bounceemail'])){
+            $bounceemail= $_POST['bounceemail'];
+        }
+
+        if ( !isset( $bounceemail ) ) {
+            // Get the site domain and get rid of www.
+            $sitename = strtolower( $_SERVER['SERVER_NAME'] );
+            if ( substr( $sitename, 0, 4 ) == 'www.' ) {
+                $sitename = substr( $sitename, 4 );
+            }
+
+            $bounceemail = 'bounce@' . $sitename;
+        }
+
         SendPress_Option::set('canspam', $canspam);
         SendPress_Option::set('linkedin', $linkedin);
         SendPress_Option::set('facebook', $facebook);
         SendPress_Option::set('twitter', $twitter);
         SendPress_Option::set('fromemail', $fromemail );
         SendPress_Option::set('fromname', $fromname );
+        SendPress_Option::set('bounceemail', $bounceemail );
        // SendPress_Option::set('unsubscribetext', $unsubtext);
 
         SendPress_Admin::redirect('Settings_Styles');
@@ -128,16 +143,21 @@ $fn = __('From Name','sendpress');
 <br class="clear">
 <h3><?php _e('Required Settings'); ?></h3>
 <div class="boxer form-box">
-<div style="float: right; width: 45%;">
-	<h4 class="nomargin"><?php _e('From Email','sendpress'); ?></h4>
-	<input name="fromemail" tabindex=2 type="text" id="fromemail" value="<?php echo SendPress_Option::get('fromemail'); ?>" class="regular-text sp-text">
+    <div style="float: right; width: 30%;">
+        <h4 class="nomargin"><?php _e('Bounce Email','sendpress'); ?></h4>
+        <input name="bounceemail" tabindex=1 type="text" id="bouceemail" value="<?php echo SendPress_Option::get('bounceemail'); ?>" class="regular-text sp-text">
 
-</div>	
-<div style="width: 45%; margin-right: 10%">
-	<h4 class="nomargin"><?php _e('From Name','sendpress'); ?></h4>
-	<input name="fromname" tabindex=1 type="text" id="fromname" value="<?php echo SendPress_Option::get('fromname'); ?>" class="regular-text sp-text">
+    </div>
+    <div style="float: right; width: 30%; margin-right: 5%">
+        <h4 class="nomargin"><?php _e('From Email','sendpress'); ?></h4>
+        <input name="fromemail" tabindex=2 type="text" id="fromemail" value="<?php echo SendPress_Option::get('fromemail'); ?>" class="regular-text sp-text">
 
-</div>
+    </div>
+    <div style="width: 30%; margin-right: 5%">
+        <h4 class="nomargin"><?php _e('From Name','sendpress'); ?></h4>
+        <input name="fromname" tabindex=1 type="text" id="fromname" value="<?php echo SendPress_Option::get('fromname'); ?>" class="regular-text sp-text">
+
+    </div>
 </div>
 
 <br class="clear">
