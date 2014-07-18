@@ -231,8 +231,8 @@ Author URI: http://sendpress.com/
 			}
 
 			 add_rewrite_rule(  
-        "^{$indexer}sendpress/([^/]+)/?",  
-        'index.php?sendpress=$matches[1]',  
+        "^{$indexer}jaiminho/([^/]+)/?",
+        'index.php?sendpress=$matches[1]',
         "top"); 
 			
 			if(defined('WP_ADMIN') && WP_ADMIN == true){
@@ -499,7 +499,8 @@ Author URI: http://sendpress.com/
 	
 		static function add_vars($public_query_vars) {
 			$public_query_vars[] = 'fxti';
-			$public_query_vars[] = 'sendpress';
+			$public_query_vars[] = 'jaiminho';
+            $public_query_vars[] = 'sendpress';
 			$public_query_vars[] = 'spmanage';
 			$public_query_vars[] = 'splist';
 			$public_query_vars[] = 'spreport';
@@ -1646,7 +1647,7 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 
 	function cron_stop(){
 		$upload_dir = wp_upload_dir();
-		$filename = $upload_dir['basedir'].'/sendpress.pause';
+		$filename = $upload_dir['basedir'].'/jaiminho.pause';
 		if (file_exists($filename)) {
 			return true;
 		}
@@ -1655,7 +1656,7 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 
 	function cron_start(){
 		$upload_dir = wp_upload_dir();
-		$filename = $upload_dir['basedir'].'/sendpress.pause';
+		$filename = $upload_dir['basedir'].'/jaiminho.pause';
 		if (file_exists($filename)) {
 			unlink($filename);
 		} 

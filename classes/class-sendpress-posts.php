@@ -233,7 +233,7 @@ class SendPress_Posts{
             'show_ui' =>true,
             'show_in_menu' =>true,
             'hierarchical' => true,
-            'rewrite' => array("slug"=>"sendpress"),
+            'rewrite' => array("slug"=>"jaiminho"),
             'show_in_nav_menus'=>false,
             'can_export'=>false,
             'publicly_queryable'=>true,

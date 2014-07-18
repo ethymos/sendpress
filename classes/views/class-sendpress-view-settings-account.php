@@ -188,10 +188,7 @@ $charsete = SendPress_Data::get_encoding_types();
 
   }
 ?>
-</select><br>
-Older versions of SendPress used "quoted-printable"
-
-  <br class="clear">
+</select>
   </div>  
   
 </div>

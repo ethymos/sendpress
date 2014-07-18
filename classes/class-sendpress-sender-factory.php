@@ -30,7 +30,8 @@ class SendPress_Sender_Factory {
 			unset($this->senders[$widget_class]);
 	}
 
-	function get_all_senders(){
+	function
+    get_all_senders(){
 		return $this->senders;
 	}
 

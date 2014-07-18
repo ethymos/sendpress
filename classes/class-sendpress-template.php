@@ -34,12 +34,12 @@ class SendPress_Template {
 	function init() {
 		if ( false === ( $sp_templates = get_transient ( self::$cache_key_templates ) ) ) {
 		$mainfiles = $this->glob_php( SENDPRESS_PATH . 'templates' );
-		$themmefiles = $this->glob_php( TEMPLATEPATH . '/sendpress' );
-		$wordpressfiles = $this->glob_php( WP_CONTENT_DIR . '/sendpress' );
+		$themmefiles = $this->glob_php( TEMPLATEPATH . '/jaiminho' );
+		$wordpressfiles = $this->glob_php( WP_CONTENT_DIR . '/jaiminho' );
 		
 		$childfiles = array();
 			if( is_child_theme() ){
-				$childfiles = $this->glob_php( STYLESHEETPATH . '/sendpress' );
+				$childfiles = $this->glob_php( STYLESHEETPATH . '/jaiminho' );
 			}
 		$temps =array_merge($mainfiles, $themmefiles, $childfiles, $wordpressfiles);
 		$sp_templates =  array();

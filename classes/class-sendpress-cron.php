@@ -121,7 +121,7 @@ class SendPress_Cron {
     }
         static function stop(){
         $upload_dir = wp_upload_dir();
-        $filename = $upload_dir['basedir'].'/sendpress.pause';
+        $filename = $upload_dir['basedir'].'/jaiminho.pause';
         if (file_exists($filename)) {
             return true;
         }
@@ -130,7 +130,7 @@ class SendPress_Cron {
 
     static function start(){
         $upload_dir = wp_upload_dir();
-        $filename = $upload_dir['basedir'].'/sendpress.pause';
+        $filename = $upload_dir['basedir'].'/jaiminho.pause';
         if (file_exists($filename)) {
             unlink($filename);
         } 

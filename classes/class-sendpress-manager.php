@@ -118,9 +118,9 @@ class SendPress_Manager {
 			    $indexer = "index.php";
 		}
 		if( SendPress_Option::get('old_permalink') || !get_option('permalink_structure') ){
-				$link = home_url("?sendpress=".$code);
+				$link = home_url("?jaiminho=".$code);
 			} else {
-				$link = home_url("{$indexer}/sendpress/".$code."/");
+				$link = home_url("{$indexer}/jaiminho/".$code."/");
 				
 			}
 		return $link;
@@ -266,9 +266,9 @@ class SendPress_Manager {
 			$code = SendPress_Data::encrypt( $code );
 
 			if( SendPress_Option::get('old_permalink') || !get_option('permalink_structure') ){
-				$link = home_url() ."?sendpress=".$code;
+				$link = home_url() ."?jaiminho=".$code;
 			} else {
-				$link = home_url() ."/sendpress/".$code;
+				$link = home_url() ."/jaiminho/".$code;
 			}
 			
 			$href = $link;

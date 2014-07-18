@@ -214,7 +214,7 @@ class SendPress_Ajax_Loader{
 		);
 		
     	$upload_dir = wp_upload_dir();
-		$filename = $upload_dir['basedir'].'/sendpress.pause';
+		$filename = $upload_dir['basedir'].'/jaiminho.pause';
 		$Content = "Stop the cron form running\r\n";
 		$handle = fopen($filename, 'w');
 		fwrite($handle, $Content);
