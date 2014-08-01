@@ -37,11 +37,7 @@ class SendPress_View {
 	
 	static function footer(){ 
 		
-		?>
-		<div class="sp-footer">
-			<a href="<?php echo SendPress_Admin::link('Help_Whatsnew'); ?>">What's New</a> | <a href="http://sendpress.com/support/knowledgebase/" target="_blank">Knowledge Base</a> | <a href="http://sendpress.uservoice.com/" target="_blank">Feedback</a> | SendPress Version: <?php echo SENDPRESS_VERSION; ?> 
-		</div>
-		<?php
+		
 	}
 
 
