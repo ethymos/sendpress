@@ -104,8 +104,10 @@ echo $time;//11:09
 
 	?>
 <h2><?php _e('Queue history for the last ','sendpress'); ?> <strong><?php echo SendPress_Option::get('queue-history',7); ?></strong> <?php _e('Days','sendpress'); ?>.</h2>
-		<small>You can adjust these settings here: <a href="<?php echo SendPress_Admin::link('Settings_Advanced'); ?>">Settings > Advanced</a>.</small>
+        <?php if ((is_multisite() && is_super_admin()) || !is_multisite()) { ?>
+		<small> <?php _e('You can adjust these settings here:', 'sendpress'); ?> <a href="<?php echo SendPress_Admin::link('Settings_Advanced'); ?>"><?php _e('Settings > Advanced', 'sendpress'); ?></a>.</small>
  		<br><br>
+        <?php } ?>
 	<!-- Forms are NOT created automatically, so you need to wrap the table in one to use features like bulk actions -->
 	<form id="email-filter" action="<?php echo SendPress_Admin::link('Queue_All'); ?>" method="get">
 		<!-- For plugins, we also need to ensure that the form posts back to our current page -->

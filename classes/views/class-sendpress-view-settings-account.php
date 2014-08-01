@@ -70,7 +70,7 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
 <br class="clear"><br class="clear">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Sending Account Setup</h3>
+    <h3 class="panel-title"><?php _e('Sending Account Setup', 'sendpress'); ?></h3>
   </div>
   <div class="panel-body">
 
@@ -84,7 +84,7 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
       if ( $c >= 1 ) { $class = "margin-left: 4%"; }
       echo "<div style=' float:left; width: 48%; $class' id='$key'>";
       ?>      
-        <p>&nbsp;<input name="sendpress-sender" type="radio"  <?php if ( $method == $key || strpos(strtolower($key) , $method) > 0 ) { ?>checked="checked"<?php } ?> id="website" value="<?php echo $key; ?>" /> Send Emails via
+        <p>&nbsp;<input name="sendpress-sender" type="radio"  <?php if ( $method == $key || strpos(strtolower($key) , $method) > 0 ) { ?>checked="checked"<?php } ?> id="website" value="<?php echo $key; ?>" /> <?php _e('Send Emails via', 'sendpress'); ?>
         <?php
         echo $sender->label();
         echo "</p><div class='well'>";
@@ -137,12 +137,12 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
 <br class="clear">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Advanced Sending Options</h3>
+    <h3 class="panel-title"><?php _e('Advanced Sending Options', 'sendpress'); ?></h3>
   </div>
   <div class="panel-body">
 <div class="boxer form-box">
   <div>
-    <h2>Email Sending Limits</h2>
+    <h2><?php _e('Email Sending Limits', 'sendpress'); ?></h2>
     
 <?php
   $emails_per_day = SendPress_Option::get('emails-per-day');
@@ -155,14 +155,14 @@ $offset = get_option( 'gmt_offset' ) * 60 * 60; // Time offset in seconds
 $local_timestamp = wp_next_scheduled('sendpress_cron_action') + $offset;
 //print_r(wp_get_schedules());
 ?>
-You have sent <strong><?php echo $emails_so_far; ?></strong> emails so far today.<br><br>
-<input type="text" size="6" name="emails-per-day" value="<?php echo $emails_per_day; ?>" /> Emails Per Day<br><br>
-<input type="text" size="6" name="emails-per-hour" value="<?php echo $emails_per_hour; ?>" /> Emails Per Hour 
+<?php sprintf(__('You have sent <strong>%s</strong> emails so far today.', 'sendpress'), $emails_so_far); ?><br><br>
+<input type="text" size="6" name="emails-per-day" value="<?php echo $emails_per_day; ?>" /> <?php _e('Emails Per Day', 'sendpress'); ?><br><br>
+<input type="text" size="6" name="emails-per-hour" value="<?php echo $emails_per_hour; ?>" /> <?php _e('Emails Per Hour', 'sendpress'); ?>
 <br><br>
-<h2>Email Encoding</h2>
+<h2><?php _e('Email Encoding', 'sendpress'); ?></h2>
 <?php
   $charset = SendPress_Option::get('email-charset','UTF-8');
- ?>Charset: 
+ ?><?php _e('Charset: ', 'sendpress'); ?>
 <select name="email-charset" id="">
 
 <?php
@@ -177,9 +177,9 @@ $charsete = SendPress_Data::get_charset_types();
   }
 ?>
 </select><br>
-Squares or weird characters displaying in your emails select the charset for your language.
+      <?php _e('Squares or weird characters displaying in your emails select the charset for your language.', 'sendpress'); ?>
 <br><br>
-Encoding: <select name="email-encoding" id="">
+      <?php _e('Encoding:', 'sendpress'); ?> <select name="email-encoding" id="">
 <?php
  $charset = SendPress_Option::get('email-encoding','8bit');
 $charsete = SendPress_Data::get_encoding_types();
@@ -205,7 +205,7 @@ $charsete = SendPress_Data::get_encoding_types();
 //wp_nonce_field(  basename(__FILE__) ,'_spnonce' );
 wp_nonce_field( $sp->_nonce_value );
 ?>
-<input type="submit" class="btn btn-primary" value="Save"/> <a href="" class="btn btn-default"><i class="icon-remove"></i> Cancel</a>
+<input type="submit" class="btn btn-primary" value="<?php _e('Save', 'sendpress'); ?>"/> <a href="" class="btn btn-default"><i class="icon-remove"></i> <?php _e('Cancel', 'sendpress'); ?></a>
 </form>
 <form method="post" id="post" class="form-inline">
 <input type="hidden" name="action" value="send-test-email" />
