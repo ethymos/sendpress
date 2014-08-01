@@ -10,38 +10,37 @@ if ( !defined( 'SENDPRESS_VERSION' ) ) {
 
 class SendPress_View_Settings_Account extends SendPress_View_Settings {
 
-  function account_setup(){
+    function account_setup()
+    {
 
-    //if(  wp_verify_nonce( $_POST['_spnonce'] , basename(__FILE__) )){
 
-        $options =  array();
+        $options = array();
 
-       
+
         $options['sendmethod'] = $_POST['sendpress-sender'];
         // Provides: Hll Wrld f PHP
         $chars = array(".", ",", " ", ":", ";", "$", "%", "*", "-", "=");
-        $options['emails-per-day'] =  str_replace($chars,"",$_POST['emails-per-day']);
-        $options['emails-per-hour'] = str_replace($chars,"",$_POST['emails-per-hour']);
+        $options['emails-per-day'] = str_replace($chars, "", $_POST['emails-per-day']);
+        $options['emails-per-hour'] = str_replace($chars, "", $_POST['emails-per-hour']);
         $options['email-charset'] = $_POST['email-charset'];
         $options['email-encoding'] = $_POST['email-encoding'];
 
         $options['phpmailer_error'] = '';
         $options['last_test_debug'] = '';
-        SendPress_Option::set( $options );
+        SendPress_Option::set($options);
 
-          global  $sendpress_sender_factory;
+        global $sendpress_sender_factory;
 
-          $senders = $sendpress_sender_factory->get_all_senders(); 
+        $senders = $sendpress_sender_factory->get_all_senders();
 
-          foreach ( $senders as $key => $sender ) {
+        foreach ($senders as $key => $sender) {
             $sender->save();
-          }
-       // }
+        }
 
         SendPress_Admin::redirect('Settings_Account');
 
 
-  }
+    }
 
   function send_test_email(){
         $options = array();
@@ -55,6 +54,11 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
 
 
   function html( $sp ) {
+
+      if (is_multisite() && !is_super_admin()) {
+          return;
+      }
+
     global  $sendpress_sender_factory;
     $senders = $sendpress_sender_factory->get_all_senders();
     ksort($senders);
