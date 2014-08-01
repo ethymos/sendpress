@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../sendpress.php:303
 msgid "Join our mailing List."
-msgstr "Junte nossa lista de discussão."
+msgstr "Junte-se a nossa lista de discussão."
 
 #: ../sendpress.php:366
 msgid "Warning"
@@ -248,32 +248,28 @@ msgstr "Filtro"
 
 #: ../classes/class-sendpress-shortcode-manage.php:31
 #: ../classes/public-views/class-sendpress-public-view-manage.php:208
-#, fuzzy
 msgid "Subscribed"
 msgstr "Inscritos"
 
 #: ../classes/class-sendpress-shortcode-manage.php:32
 #: ../classes/public-views/class-sendpress-public-view-manage.php:209
 msgid "Unsubscribed"
-msgstr "Subscrição"
+msgstr "Desinscrição"
 
 #: ../classes/class-sendpress-shortcode-manage.php:33
 #: ../classes/public-views/class-sendpress-public-view-manage.php:210
-#, fuzzy
 msgid "List"
 msgstr "Listas"
 
 #: ../classes/class-sendpress-shortcode-manage.php:68
 #: ../classes/public-views/class-sendpress-public-view-manage.php:243
-#, fuzzy
 msgid "Never Subscribed"
-msgstr "Inscritos"
+msgstr "Nunca inscritos"
 
 #: ../classes/class-sendpress-shortcode-manage.php:89
 #: ../classes/public-views/class-sendpress-public-view-manage.php:264
-#, fuzzy
 msgid "Save My Settings"
-msgstr "Configurações"
+msgstr "Salvar minhas configurações"
 
 #: ../classes/class-sendpress-pro-manager.php:210
 msgid "Alert"
@@ -285,7 +281,7 @@ msgid ""
 "<a href=\"http://sendpress.com/support/\">SendPress Support</a>"
 msgstr ""
 "A sua chave API é inválida ou em uso em outro site. Precisa de ajuda? Mande "
-"um email para <a href=\"mailto:contato@jaiminho.com.br\"> o suporte </ a>"
+"um e-mail para <a href=\"mailto:contato@jaiminho.com.br\"> o suporte </ a>"
 
 #: ../classes/class-sendpress-pro-manager.php:218
 msgid ""
@@ -379,38 +375,32 @@ msgid "Title:"
 msgstr "Título:"
 
 #: ../classes/class-sendpress-widget-signup.php:198
-#, fuzzy
 msgid "Description:"
-msgstr "Gerenciar Assinatura"
+msgstr "Descrição:"
 
 #: ../classes/class-sendpress-widget-signup.php:205
-#, fuzzy
 msgid "Collect First Name"
-msgstr "Nome"
+msgstr "Coletar nome"
 
 #: ../classes/class-sendpress-widget-signup.php:210
-#, fuzzy
 msgid "Collect Last Name"
-msgstr "Sobrenome"
+msgstr "Coletar sobrenome"
 
 #: ../classes/class-sendpress-widget-signup.php:221
 msgid "Check all lists by default"
 msgstr "Confira todas as listas por padrão"
 
 #: ../classes/class-sendpress-widget-signup.php:226
-#, fuzzy
 msgid "First Name Label:"
-msgstr "Nome"
+msgstr "Legenda nome:"
 
 #: ../classes/class-sendpress-widget-signup.php:231
-#, fuzzy
 msgid "Last Name Label:"
-msgstr "Sobrenome"
+msgstr "Legenda do sobrenome:"
 
 #: ../classes/class-sendpress-widget-signup.php:236
-#, fuzzy
 msgid "E-Mail Label:"
-msgstr "E-Mail"
+msgstr "Legenda do e-mail:"
 
 #: ../classes/class-sendpress-widget-signup.php:241
 msgid "Button Text:"
@@ -433,7 +423,6 @@ msgid "Default"
 msgstr "Padrão"
 
 #: ../classes/class-sendpress-reports-table.php:309
-#, fuzzy
 msgid "Date Sent"
 msgstr "Data do envio"
 
@@ -458,7 +447,6 @@ msgid "Clicks"
 msgstr "Cliques"
 
 #: ../classes/class-sendpress-reports-table.php:315
-#, fuzzy
 msgid "Unsubscribes"
 msgstr "Desinscrições"
 
@@ -468,7 +456,7 @@ msgstr "Este é um texto único alternativo para o corpo."
 
 #: ../classes/class-sendpress-manager.php:178
 msgid "A Test Email from SendPress."
-msgstr "Email teste do Jaiminho."
+msgstr "E-mail teste do Jaiminho."
 
 #: ../classes/class-sendpress-manager.php:179
 msgid "SendPress test email :)."
@@ -513,7 +501,6 @@ msgid "Password"
 msgstr "Senha"
 
 #: ../classes/class-sendpress-lists-table.php:101
-#, fuzzy
 msgid "View/Edit"
 msgstr "Ver/Editar"
 
@@ -522,7 +509,6 @@ msgid "Sync"
 msgstr "Sincronizar"
 
 #: ../classes/class-sendpress-lists-table.php:108
-#, fuzzy
 msgid "Import"
 msgstr "Importar"
 
@@ -531,7 +517,6 @@ msgid "Add"
 msgstr "Adicionar"
 
 #: ../classes/class-sendpress-lists-table.php:112
-#, fuzzy
 msgid "Export"
 msgstr "Exportar"
 
@@ -701,15 +686,13 @@ msgstr "Configurar"
 
 #: ../classes/views/class-sendpress-view-subscribers-listcreate.php:31
 #: ../classes/views/class-sendpress-view-subscribers-listedit.php:39
-#, fuzzy
 msgid "Save List"
-msgstr "Lista do Jaiminho"
+msgstr "Salvar lista"
 
 #: ../classes/views/class-sendpress-view-subscribers-listcreate.php:33
 #: ../classes/views/class-sendpress-view-subscribers.php:78
-#, fuzzy
 msgid "Create List"
-msgstr "Criado"
+msgstr "Criar lista"
 
 #: ../classes/views/class-sendpress-view-subscribers-listcreate.php:38
 #: ../classes/views/class-sendpress-view-subscribers-listedit.php:49
@@ -719,7 +702,6 @@ msgstr "Permitir que o usuário se inscreva nesta lista"
 #: ../classes/views/class-sendpress-view-subscribers-add.php:35
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:52
 #: ../classes/views/class-sendpress-view-subscribers-all.php:75
-#, fuzzy
 msgid "Add Subscriber"
 msgstr "Novo assinante"
 
@@ -728,17 +710,15 @@ msgstr "Novo assinante"
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:109
 #: ../classes/public-views/class-sendpress-public-view-manage.php:128
 msgid "Email"
-msgstr "Email"
+msgstr "E-mail"
 
 #: ../classes/views/class-sendpress-view-subscribers-add.php:45
 #: ../classes/views/class-sendpress-view-subscribers-subscriber.php:131
-#, fuzzy
 msgid "Firstname"
-msgstr "Primeiro nome"
+msgstr "Nome"
 
 #: ../classes/views/class-sendpress-view-subscribers-add.php:46
 #: ../classes/views/class-sendpress-view-subscribers-subscriber.php:132
-#, fuzzy
 msgid "Lastname"
 msgstr "Sobrenome"
 
@@ -748,9 +728,8 @@ msgid "Status"
 msgstr "Estado"
 
 #: ../classes/views/class-sendpress-view-subscribers-add.php:71
-#, fuzzy
 msgid "Add Subscribers"
-msgstr "Inscritos"
+msgstr "Adicionar inscrição"
 
 #: ../classes/views/class-sendpress-view-subscribers-add.php:87
 msgid ""
@@ -792,9 +771,8 @@ msgstr "Coloque o JavaScript no Rodapé"
 
 #: ../classes/views/class-sendpress-view-emails-templates.php:54
 #: ../classes/views/class-sendpress-view-emails.php:86
-#, fuzzy
 msgid "Create Email"
-msgstr "Do E-mail"
+msgstr "Criar e-mail"
 
 #: ../classes/views/class-sendpress-view-emails-templates.php:56
 #: ../classes/views/class-sendpress-view-emails.php:53
@@ -842,17 +820,14 @@ msgstr ""
 "quem clicou ou abriu o e-mail."
 
 #: ../classes/views/class-sendpress-view-queue.php:38
-#, fuzzy
 msgid "Queues"
 msgstr "Fila"
 
 #: ../classes/views/class-sendpress-view-queue.php:43
-#, fuzzy
 msgid "Active"
 msgstr "Ativar"
 
 #: ../classes/views/class-sendpress-view-queue.php:46
-#, fuzzy
 msgid "Send History"
 msgstr "Histórico de envios"
 
@@ -905,9 +880,8 @@ msgid "Yes! Delete All Emails"
 msgstr "Sim! Excluir todos os e-mails"
 
 #: ../classes/views/class-sendpress-view-queue.php:209
-#, fuzzy
 msgid "Sending Emails"
-msgstr "Emails"
+msgstr "E-mails sendo enviados"
 
 #: ../classes/views/class-sendpress-view-queue.php:217
 msgid "of"
@@ -918,14 +892,12 @@ msgid "If you close this window sending will stop. "
 msgstr "Se você fechar esta janela o envio vai parar. "
 
 #: ../classes/views/class-sendpress-view-overview.php:184
-#, fuzzy
 msgid "Recent Subscribers"
-msgstr "Inscritos"
+msgstr "Recém inscritos"
 
 #: ../classes/views/class-sendpress-view-overview.php:215
-#, fuzzy
 msgid "Most Active Subscribers"
-msgstr "Inscritos"
+msgstr "Inscritos mais ativos"
 
 #: ../classes/views/class-sendpress-view-emails.php:47
 msgid "Newsletters"
@@ -936,9 +908,8 @@ msgid "Autoresponders"
 msgstr "Auto resposta"
 
 #: ../classes/views/class-sendpress-view-subscribers-subscriber.php:111
-#, fuzzy
 msgid "Edit Subscriber"
-msgstr "Inscritos"
+msgstr "Editar inscrição"
 
 #: ../classes/views/class-sendpress-view-subscribers-subscriber.php:207
 msgid "This feature requires SendPress Pro."
@@ -978,9 +949,8 @@ msgid "IP address"
 msgstr "Endereço IP"
 
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:182
-#, fuzzy
 msgid "Start Import"
-msgstr "Iniciar turismo"
+msgstr "Iniciar importação"
 
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:20
 #: ../classes/views/class-sendpress-view-subscribers-all.php:34
@@ -998,9 +968,8 @@ msgstr "Isso removerá todos os assinantes da lista. Tem certeza?"
 
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:88
 #: ../classes/views/class-sendpress-view-subscribers-all.php:113
-#, fuzzy
 msgid "This will remove all subscribers from the list"
-msgstr "Usuário não foi inscrito na lista."
+msgstr "Isso irá remover todos os inscritos da lista"
 
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:91
 #: ../classes/views/class-sendpress-view-subscribers-all.php:116
@@ -1016,7 +985,6 @@ msgstr ""
 "e-mail poder ser enviado."
 
 #: ../classes/views/class-sendpress-view-emails-send.php:83
-#, fuzzy
 msgid "Send Email"
 msgstr "Enviar e-mail"
 
@@ -1056,14 +1024,12 @@ msgid "Full Access (<small>No Permissions Access</small>)"
 msgstr "Acesso Total (<small> Sem permissões de acesso </ small>)"
 
 #: ../classes/views/class-sendpress-view-subscribers-all.php:99
-#, fuzzy
 msgid "Remove All Subscribers"
-msgstr "Inscritos"
+msgstr "Remover todos os inscritos"
 
 #: ../classes/views/class-sendpress-view-subscribers-all.php:100
-#, fuzzy
 msgid "Export All Subscribers"
-msgstr "Inscritos"
+msgstr "Exportar todos os inscritos"
 
 #: ../classes/views/class-sendpress-view-settings-styles.php:120
 #: ../classes/views/class-sendpress-view-settings-styles.php:132
@@ -1076,14 +1042,12 @@ msgid "From Name"
 msgstr "De Nome"
 
 #: ../classes/views/class-sendpress-view-settings-styles.php:129
-#, fuzzy
 msgid "Required Settings"
-msgstr "Configurações"
+msgstr "Configurações importantes"
 
 #: ../classes/views/class-sendpress-view-settings-styles.php:144
-#, fuzzy
 msgid "Optional Settings"
-msgstr "Configurações"
+msgstr "Configurações opcionais"
 
 #: ../classes/views/class-sendpress-view-settings-styles.php:176
 msgid "Twitter URL"
@@ -1133,9 +1097,8 @@ msgstr ""
 "de 2003 </ a>."
 
 #: ../classes/views/class-sendpress-view-subscribers-listedit.php:41
-#, fuzzy
 msgid "Edit List"
-msgstr "Editar"
+msgstr "Editar lista"
 
 #: ../classes/views/class-sendpress-view-subscribers-listedit.php:64
 msgid ""
@@ -1146,38 +1109,32 @@ msgstr ""
 
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:111
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:117
-#, fuzzy
 msgid "Confirm Send"
 msgstr "Confirmar envio"
 
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:115
-#, fuzzy
 msgid "Cancel Send"
-msgstr "Cancelar"
+msgstr "Cancelar envio"
 
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:127
-#, fuzzy
 msgid "Send Time"
 msgstr "Hora de envio"
 
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:147
-#, fuzzy
 msgid "No Lists Selected"
 msgstr "Nenhuma lista selecionada"
 
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:155
-#, fuzzy
 msgid "Test Emails"
-msgstr "Emails de teste"
+msgstr "E-mails de teste"
 
 #: ../classes/views/class-sendpress-view-emails-send-confirm.php:165
 msgid "No Test Emails added"
 msgstr "Não há e-mails de teste adicionados"
 
 #: ../classes/views/class-sendpress-view-subscribers.php:39
-#, fuzzy
 msgid "All Subscribers"
-msgstr "Inscritos"
+msgstr "Todos os inscritos"
 
 #: ../classes/views/class-sendpress-view-subscribers.php:55
 msgid "Lists per page"
@@ -1202,14 +1159,12 @@ msgid ""
 msgstr "<b> NOTA: </ b> Lembre-se de verificar a sua pasta de Spam."
 
 #: ../classes/views/class-sendpress-view-settings-account.php:218
-#, fuzzy
 msgid "Send Test Email"
 msgstr "Jaiminho :) e-mail de teste."
 
 #: ../classes/views/class-sendpress-view-settings-account.php:224
-#, fuzzy
 msgid "Send Test!"
-msgstr "Jaiminho"
+msgstr "Envio test!"
 
 #: ../classes/views/class-sendpress-view-settings-account.php:224
 msgid "Debug Info"
@@ -1248,9 +1203,8 @@ msgid "Basic Settings & Styles"
 msgstr "Definições e estilos básicos"
 
 #: ../classes/views/class-sendpress-view-settings.php:36
-#, fuzzy
 msgid "System Emails & Pages"
-msgstr "Os e-mails por página"
+msgstr "E-mails de sistema e Páginas"
 
 #: ../classes/views/class-sendpress-view-settings.php:37
 msgid "Sending Account"
@@ -1282,7 +1236,6 @@ msgid "Deactivate"
 msgstr "Desativar"
 
 #: ../classes/modules/class-sendpress-module-pro.php:27
-#, fuzzy
 msgid "SendPress API Key"
 msgstr "Página do Jaiminho"
 
@@ -1313,7 +1266,6 @@ msgid "Buy Now"
 msgstr "Comprar"
 
 #: ../classes/modules/class-sendpress-module-reports.php:18
-#, fuzzy
 msgid "Advanced Reports"
 msgstr "Relatórios"
 
@@ -1326,9 +1278,8 @@ msgstr ""
 "quando. O dispositivo que eles usaram e onde eles estavam."
 
 #: ../classes/modules/class-sendpress-module-spam-test.php:18
-#, fuzzy
 msgid "Spam Testing"
-msgstr "Configurações"
+msgstr "Test de Spam"
 
 #: ../classes/modules/class-sendpress-module-empty.php:13
 msgid "More Coming Soon!"
@@ -1343,9 +1294,8 @@ msgid "Request a Feature"
 msgstr "Solicitar um recurso"
 
 #: ../classes/public-views/class-sendpress-public-view-manage.php:125
-#, fuzzy
 msgid "Subscriber Info"
-msgstr "Inscritos"
+msgstr "Informação de assinatura"
 
 #: ../classes/public-views/class-sendpress-public-view-manage.php:130
 msgid "Signup Date"
@@ -1360,18 +1310,16 @@ msgid "Your subscriptions have been updated. Thanks."
 msgstr "Suas inscrições foram atualizados. Obrigado."
 
 #: ../classes/public-views/class-sendpress-public-view-manage.php:189
-#, fuzzy
 msgid "You are subscribed to the following lists:"
-msgstr "Usuário não foi inscrito na lista."
+msgstr "Você está inscrito nas seguintes listas:"
 
 #: ../classes/public-views/class-sendpress-public-view-manage.php:269
 msgid "Return to"
 msgstr "Retornar para"
 
 #: ../classes/public-views/class-sendpress-public-view-confirm.php:50
-#, fuzzy
 msgid "Thank you for signing up!"
-msgstr "Obrigado por subscrever."
+msgstr "Obrigado por se cadastrar!"
 
 #: ../classes/public-views/class-sendpress-public-view-confirm.php:51
 msgid "You're all set, and should start receiving emails soon."
@@ -1397,14 +1345,12 @@ msgstr ""
 "Você deve fornecer um ID de lista para a página de postagem para trabalhar"
 
 #: ../classes/public-views/class-sendpress-public-view-post.php:208
-#, fuzzy
 msgid "Thank You for subscribing"
-msgstr "Obrigado por subscrever."
+msgstr "Obrigado por se inscrever."
 
 #: ../classes/public-views/class-sendpress-public-view-post.php:211
-#, fuzzy
 msgid "Sorry, We had a Problem adding your email"
-msgstr "Desculpe, mas não conseguiu encontrar o seu e-mail."
+msgstr "Desculpe, mas houve um problema ao adicionar seu e-mail."
 
 #: ../inc/forms/email-style.2.0.php:212
 msgid "Body Styles"
