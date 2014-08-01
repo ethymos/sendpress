@@ -79,7 +79,7 @@ class SendPress_Lists_Table extends WP_List_Table {
                 $role = get_post_meta($item->ID,'sync_role',true);
                 $add = '';
                 if($role != 'none' && $role != false){
-                    $add = " - <a href='". SendPress_Admin::link('Subscribers_Sync') . "&listID=".$item->ID."'>Sync</a>";
+                    $add = " - <a href='". SendPress_Admin::link('Subscribers_Sync') . "&listID=".$item->ID."'>" . __('Sync', 'sendpress') . "</a>";
                 }
 
                 return  $this->_sendpress->countSubscribers($item->ID) . $add ;
@@ -93,25 +93,25 @@ class SendPress_Lists_Table extends WP_List_Table {
                 $role = get_post_meta($item->ID,'sync_role',true);
                 $add = '';
                 if($role != 'none' && $role != false){
-                    $add = " - <a href='". SendPress_Admin::link('Subscribers_Sync') . "&listID=".$item->ID."'>Sync</a>";
+                    $add = " - <a href='". SendPress_Admin::link('Subscribers_Sync') . "&listID=".$item->ID."'>" . __('Sync', 'sendpress') . "</a>";
                 }
 
 
                 $str = '<div class="inline-buttons">
-                    <a class="btn btn-info" href="?page='.$_REQUEST['page'].'&view=subscribers&listID='.$item->ID.'"><span class="glyphicon glyphicon-edit"></span> ' . _('View/Edit') . '</a> ';
+                    <a class="btn btn-info" href="?page='.$_REQUEST['page'].'&view=subscribers&listID='.$item->ID.'"><span class="glyphicon glyphicon-edit"></span> ' . __('View/Edit', 'sendpress') . '</a> ';
                 $role = get_post_meta($item->ID,'sync_role',true);
                 $add = '';
                 if($role != 'none' && $role != false){
-                    $str .= "<a class='btn btn-primary' href='". SendPress_Admin::link('Subscribers_Sync') . "&listID=".$item->ID."'><span class='glyphicon glyphicon-refresh'></span> " . _('Sync', 'sendpress') . "</a> ";
+                    $str .= "<a class='btn btn-primary' href='". SendPress_Admin::link('Subscribers_Sync') . "&listID=".$item->ID."'><span class='glyphicon glyphicon-refresh'></span> " . __('Sync', 'sendpress') . "</a> ";
                 } else {
                     if(apply_filters( 'sendpress_show_import_button', true, $this->_sendpress )){
-                         $str .=  '<a class="list-import btn btn-primary" href="?page='.$_REQUEST['page'].'&view=csvimport&listID='. $item->ID .'"><span class="glyphicon glyphicon-upload"></span> ' . _('Import', 'sendpress') . '</a> ';
+                         $str .=  '<a class="list-import btn btn-primary" href="?page='.$_REQUEST['page'].'&view=csvimport&listID='. $item->ID .'"><span class="glyphicon glyphicon-upload"></span> ' . __('Import', 'sendpress') . '</a> ';
                     }
                     
-                    $str .= '<a class="btn btn-primary" href="?page='.$_REQUEST['page'].'&view=add&listID='. $item->ID .'"><span class="glyphicon glyphicon-user"></span> ' . _('Add', 'sendpress') . '</a> ';
-                    $str .='<a class="btn btn-primary" href="?page='.$_REQUEST['page'].'&action=export-list&listID='. $item->ID .'"><span class="glyphicon glyphicon-download"></span> ' . _('Export', 'sendpress') . '</a> ';
+                    $str .= '<a class="btn btn-primary" href="?page='.$_REQUEST['page'].'&view=add&listID='. $item->ID .'"><span class="glyphicon glyphicon-user"></span> ' . __('Add', 'sendpress') . '</a> ';
+                    $str .='<a class="btn btn-primary" href="?page='.$_REQUEST['page'].'&action=export-list&listID='. $item->ID .'"><span class="glyphicon glyphicon-download"></span> ' . __('Export', 'sendpress') . '</a> ';
                     
-                    $str .=    '<a class="btn btn-primary" href="'. SendPress_Admin::link('Subscribers_Listform', array('listID' => $item->ID)) .'"><span class="glyphicon glyphicon-list"></span> ' . _('Form', 'sendpress') . '</a> ';
+                    $str .=    '<a class="btn btn-primary" href="'. SendPress_Admin::link('Subscribers_Listform', array('listID' => $item->ID)) .'"><span class="glyphicon glyphicon-list"></span> ' . __('Form', 'sendpress') . '</a> ';
                 }
 
                
@@ -219,11 +219,11 @@ class SendPress_Lists_Table extends WP_List_Table {
        
         $columns = array(
             'cb'        => '<input type="checkbox" />', //Render a checkbox instead of text
-            'title' => 'Name',
-            'count_subscribers' => 'Active',
-            'last_send_date' => 'Last Send',
-            //'count_bounced' => 'Bounced',
-            'actions'=> 'Subscribers'
+            'title' => __('Name', 'sendpress'),
+            'count_subscribers' => __('Active', 'sendpress'),
+            'last_send_date' => __('Last Send', 'sendpress'),
+            //'count_bounced' => __('Bounced', 'sendpress'),
+            'actions'=> __('Subscribers', 'sendpress')
 
             
         );

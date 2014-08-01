@@ -141,7 +141,7 @@ $fn = __('From Name','sendpress');
 	<a href="<?php echo SendPress_Admin::link('Settings_Styles'); ?>" class="btn btn-default btn-large" ><i class="icon-remove"></i> <?php _e('Cancel','sendpress'); ?></a> <a href="#" id="save-update" class="btn btn-primary btn-large"><i class="icon-white icon-ok"></i> <?php _e('Save','sendpress'); ?></a>
 </div>
 <br class="clear">
-<h3><?php _e('Required Settings'); ?></h3>
+<h3><?php _e('Required Settings', 'sendpress'); ?></h3>
 <div class="boxer form-box">
     <div style="float: right; width: 30%;">
         <h4 class="nomargin"><?php _e('Bounce Email','sendpress'); ?></h4>
@@ -161,7 +161,7 @@ $fn = __('From Name','sendpress');
 </div>
 
 <br class="clear">
-<h3><?php _e('Optional Settings'); ?></h3>
+<h3><?php _e('Optional Settings', 'sendpress'); ?></h3>
 		<?php 
         define('SENDPRESS_STYLER_PAGE',true);
         require_once( SENDPRESS_PATH. 'inc/forms/email-style.2.0.php' ); ?>
@@ -191,15 +191,15 @@ if( SendPress_Option::get('beta') ) {
 
 
 <div style="float: right; width: 45%;">
-	<h4 class="nomargin">Social Media</h4>
-	<p>These items only show on the tempalte if a url is entered.</p>
+	<h4 class="nomargin"><?php _e('Social Media', 'sendpress'); ?></h4>
+	<p><?php _e('These items only show on the tempalte if a url is entered.', 'sendpress'); ?></p>
 	<p><label><?php _e('Twitter URL','sendpress'); ?>:</label>
 	<input name="twitter" type="text" id="twitter" value="<?php echo SendPress_Option::get('twitter'); ?>" class="regular-text sp-text"></p>
 <p><label><?php _e('Facebook URL','sendpress'); ?>:</label>
 <input name="facebook" type="text" id="facebook" value="<?php echo SendPress_Option::get('facebook'); ?>" class="regular-text sp-text" ></p>
 <p><label><?php _e('LinkedIn URL','sendpress'); ?>:</label>
 <input name="linkedin" type="text" id="linkedin" value="<?php echo SendPress_Option::get('linkedin'); ?>" class="regular-text sp-text"></p>
-	<p class="alert alert-info">Make sure you include http:// in your links</p>
+	<p class="alert alert-info"><?php _e('Make sure you include http:// in your links', 'sendpress'); ?></p>
 </div>	
 <div style="width: 45%; margin-right: 10%">
 <h4 class="nomargin"><?php _e('CAN-SPAM','sendpress'); ?>: <small><?php _e('required in the US.','sendpress'); ?></small>&nbsp;&nbsp;&nbsp;&nbsp;<?php _e('This area displays in Email Footer','sendpress'); ?></h4>

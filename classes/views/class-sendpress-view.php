@@ -37,7 +37,7 @@ class SendPress_View {
 	
 	static function footer(){ 
 		
-		
+
 	}
 
 

@@ -144,9 +144,9 @@ $canceled = get_post_meta($item->ID, '_canceled', true);
 
                     $queue = SendPress_Data::emails_in_queue($item->ID);
                     }
-                    $string = "Recipients: ". $rec ."<br>";
-                    $string .= "Sent: ". $sent ."<br>";
-                    $string .= "In Queue: ". $queue ."<br>";
+                    $string = __('Recipients', 'sendpress') . ": ". $rec ."<br>";
+                    $string .= __('Sent', 'sendpress') . ": " . $sent ."<br>";
+                    $string .= __('In Queue', 'sendpress') . ": ". $queue ."<br>";
 
                  return $string;
 
