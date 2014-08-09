@@ -90,11 +90,11 @@ $post_type_object = get_post_type_object($sp->_email_post_type);
 <?php $this->panel_end(); ?>
 <div class="leftcol">
 <?php $this->panel_start( '<span class="glyphicon glyphicon-calendar"></span> '. __('Date & Time','sendpress')); ?>
-<input type="radio" name="send-date" value="now" checked/><?php _e('Start Sending Now'); ?><br>
-<input type="radio" name="send-date" value="later"/><?php _e('Send Later'); ?><br>
+<input type="radio" name="send-date" value="now" checked/><?php _e('Start Sending Now', 'sendpress'); ?><br>
+<input type="radio" name="send-date" value="later"/><?php _e('Send Later', 'sendpress'); ?><br>
 <div class="date-holder" style="display:none">
 	<br>
-<input type="text" name="date-pickit" id="date-pickit" class=" fifty float-left" value="<?php echo date_i18n('Y/m/d'); ?>"/>&nbsp;at
+<input type="text" name="date-pickit" id="date-pickit" class=" fifty float-left" value="<?php echo date_i18n(get_option('date_format')); ?>"/>&nbsp;<?php _e('at', 'sendpress'); ?>
 <script type="text/javascript">
 jQuery(document).ready(function($) {
 $(".date-holder").hide();
@@ -108,7 +108,7 @@ $('input[type=radio][name=send-date]').change(function() {
         }
     });
 $('#date-pickit').datepicker({
-dateFormat : 'yy/mm/dd'
+dateFormat : 'dd/mm/yy'
 });
 });
 </script>

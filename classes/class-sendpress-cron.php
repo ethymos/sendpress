@@ -38,7 +38,7 @@ class SendPress_Cron {
 	}
 
 	function __construct(){
-        //$this->auto();
+        $this->auto();
 		  /* some processing for cron management */
         add_action( 'wp_loaded', array( $this , 'auto_cron' ) );
         add_filter( 'cron_schedules', array( $this , 'cron_schedules' ) );

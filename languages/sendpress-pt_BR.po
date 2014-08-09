@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jaiminho/SendPress\n"
-"POT-Creation-Date: 2014-08-09 18:08-0300\n"
+"POT-Creation-Date: 2014-08-09 18:30-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
 "Language-Team: \n"
@@ -1370,6 +1370,10 @@ msgstr "Começar a enviar agora"
 #: ../classes/views/class-sendpress-view-emails-send.php:94
 msgid "Send Later"
 msgstr "Enviar mais tarde"
+
+#: ../classes/views/class-sendpress-view-emails-send.php:97
+msgid "at"
+msgstr "às"
 
 #: ../classes/views/class-sendpress-view-settings-access.php:127
 msgid "Role"

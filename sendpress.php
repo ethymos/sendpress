@@ -240,8 +240,8 @@ Author URI: http://sendpress.com/
 			}
 		
 			$this->add_custom_post();
-			//add_filter( 'cron_schedules', array($this,'cron_schedule' ));
-			//add_action( 'wp_loaded', array( $this, 'add_cron' ) );
+			add_filter( 'cron_schedules', array($this,'cron_schedule' ));
+			add_action( 'wp_loaded', array( $this, 'add_cron' ) );
 				
 			if( is_admin() ){
 				if( isset($_GET['spv'])){
@@ -312,8 +312,8 @@ Author URI: http://sendpress.com/
 				wp_clear_scheduled_hook('sendpress_cron_action');
 			} else {
 				if ( ! wp_next_scheduled( 'sendpress_cron_action' )   ){
-					wp_schedule_event( time() , 'hourly', 'sendpress_cron_action' );  
-				} 
+					wp_schedule_event( time() , 'hourly', 'sendpress_cron_action' );
+				}
 			}
 		}
 	
@@ -647,23 +647,17 @@ Author URI: http://sendpress.com/
 		SendPress_Option::set('emails-today', $emails_today);
 
 
-		//SendPress_Option::set('allow_tracking', '');
-		//wp_clear_scheduled_hook( 'sendpress_cron_action' );
+		SendPress_Option::set('allow_tracking', '');
+		wp_clear_scheduled_hook( 'sendpress_cron_action' );
 		// Schedule an action if it's not already scheduled
-		/*
+
 		if ( ! wp_next_scheduled( 'sendpress_cron_action' ) ) {
 		    wp_schedule_event( time(), 'tenminutes',  'sendpress_cron_action' );
 		}
-		*/
-		
-		//wp_clear_scheduled_hook( 'sendpress_cron_action' );
-		
-		/*
-		add_meta_box( 'email-status', __( 'Email Status', 'sendpress' ), array( $this, 'email_meta_box' ), $this->_email_post_type, 'side', 'low' );
-			
-		*/
-		
 
+		wp_clear_scheduled_hook( 'sendpress_cron_action' );
+
+		add_meta_box( 'email-status', __( 'Email Status', 'sendpress' ), array( $this, 'email_meta_box' ), $this->_email_post_type, 'side', 'low' );
 
 		if( ( isset($_GET['page']) && $_GET['page'] == 'sp-templates' ) || (isset( $_GET['view'] ) && $_GET['view'] == 'style-email' )) {
 			wp_register_script('sendpress_js_styler', SENDPRESS_URL .'js/styler.js' ,'', SENDPRESS_VERSION);
@@ -1667,14 +1661,15 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 		global $wpdb;
 		$count = SendPress_Option::get('emails-per-hour');
 		$emails_per_hour = SendPress_Option::get('emails-per-hour');
+        $attempts = 0;
+        $email_count = 0;
 		
 		if( SendPress_Manager::limit_reached()  ){
 			return;
 		}
 
-
 		for ($i=0; $i < $count ; $i++) { 
-				$email = $this->wpdbQuery("SELECT * FROM ". SendPress_Data::queue_table() ." WHERE success = 0 AND max_attempts != attempts AND inprocess = 0 ORDER BY id LIMIT 1","get_row");
+				$email = $wpdb->get_row("SELECT * FROM ". SendPress_Data::queue_table() ." WHERE success = 0 AND max_attempts != attempts AND inprocess = 0 ORDER BY id LIMIT 1");
 				if($email != null){
 
 					if( SendPress_Manager::limit_reached()  ){
