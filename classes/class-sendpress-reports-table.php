@@ -305,14 +305,14 @@ $canceled = get_post_meta($item->ID, '_canceled', true);
        
         $columns = array(
             'cb' => '<input type="checkbox" />', //Render a checkbox instead of text
-            'title' => _('Subject', 'sendpress'),
-            'created' => _('Date Sent', 'sendpress'),
-            'count' => _('Info', 'sendpress'),
+            'title' => __('Subject', 'sendpress'),
+            'created' => __('Date Sent', 'sendpress'),
+            'count' => __('Info', 'sendpress'),
 
-            'sentto' => _('Lists', 'sendpress'),
-            'opens' => _('Opens ', 'sendpress'),
-            'clicks'=> _('Clicks', 'sendpress'),
-            'unsubscribe'=> _('Unsubscribes', 'sendpress'),
+            'sentto' => __('Lists', 'sendpress'),
+            'opens' => __('Opens ', 'sendpress'),
+            'clicks'=> __('Clicks', 'sendpress'),
+            'unsubscribe'=> __('Unsubscribes', 'sendpress'),
             //'bounces' => 'Bounces'
             //'count_subscribers' => 'Subscribers'
 
