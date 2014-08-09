@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jaiminho/SendPress\n"
-"POT-Creation-Date: 2014-08-09 17:56-0300\n"
+"POT-Creation-Date: 2014-08-09 18:08-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
 "Language-Team: \n"
@@ -1123,6 +1123,18 @@ msgstr "das"
 #: ../classes/views/class-sendpress-view-queue.php:243
 msgid "If you close this window sending will stop. "
 msgstr "Se você fechar esta janela o envio vai parar. "
+
+#: ../classes/views/class-sendpress-view-overview.php:95
+msgid "Opens in last send"
+msgstr "Aberturas do último envio"
+
+#: ../classes/views/class-sendpress-view-overview.php:131
+msgid "Clicks in last send"
+msgstr "Cliques do último envio"
+
+#: ../classes/views/class-sendpress-view-overview.php:158
+msgid "Emails in Queue"
+msgstr "E-mails na fila"
 
 #: ../classes/views/class-sendpress-view-overview.php:184
 msgid "Recent Subscribers"
