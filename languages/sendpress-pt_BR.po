@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jaiminho/SendPress\n"
-"POT-Creation-Date: 2014-08-01 01:27-0300\n"
+"POT-Creation-Date: 2014-08-09 17:56-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
 "Language-Team: \n"
@@ -99,8 +99,8 @@ msgstr "Editar"
 #: ../classes/views/class-sendpress-view-emails-create.php:67
 #: ../classes/views/class-sendpress-view-settings-styles.php:141
 #: ../classes/views/class-sendpress-view-emails-send-cancel.php:50
-#: ../classes/views/class-sendpress-view-settings-account.php:68
-#: ../classes/views/class-sendpress-view-settings-account.php:208
+#: ../classes/views/class-sendpress-view-settings-account.php:69
+#: ../classes/views/class-sendpress-view-settings-account.php:210
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -508,31 +508,31 @@ msgstr "Cliques"
 msgid "Unsubscribes"
 msgstr "Desinscrições"
 
-#: ../classes/class-sendpress-manager.php:177
+#: ../classes/class-sendpress-manager.php:185
 msgid "This is text only alternative body."
 msgstr "Este é um texto único alternativo para o corpo."
 
-#: ../classes/class-sendpress-manager.php:178
+#: ../classes/class-sendpress-manager.php:186
 msgid "A Test Email from SendPress."
 msgstr "E-mail teste do Jaiminho."
 
-#: ../classes/class-sendpress-manager.php:179
+#: ../classes/class-sendpress-manager.php:187
 msgid "SendPress test email :)."
 msgstr "Jaiminho :) e-mail de teste."
 
-#: ../classes/class-sendpress-manager.php:440
+#: ../classes/class-sendpress-manager.php:442
 #: ../classes/class-sendpress-sender-gmail.php:158
 #: ../classes/class-sendpress-sender-website.php:180
 msgid "The result was: "
 msgstr "O resultado foi:"
 
-#: ../classes/class-sendpress-manager.php:441
+#: ../classes/class-sendpress-manager.php:443
 #: ../classes/class-sendpress-sender-gmail.php:159
 #: ../classes/class-sendpress-sender-website.php:181
 msgid "The mailer error info: "
 msgstr "A informação de erro do envio:"
 
-#: ../classes/class-sendpress-manager.php:443
+#: ../classes/class-sendpress-manager.php:445
 #: ../classes/class-sendpress-sender-gmail.php:161
 #: ../classes/class-sendpress-sender-website.php:183
 msgid "The SMTP debugging output is shown below:\n"
@@ -652,8 +652,8 @@ msgid "Start Tour"
 msgstr "Iniciar tour"
 
 #: ../classes/class-sendpress-tour.php:88
-#: ../classes/views/class-sendpress-view-queue.php:238
-#: ../classes/views/class-sendpress-view-settings-account.php:317
+#: ../classes/views/class-sendpress-view-queue.php:243
+#: ../classes/views/class-sendpress-view-settings-account.php:319
 msgid "Close"
 msgstr "Fechar"
 
@@ -690,8 +690,8 @@ msgstr "Usuário não foi inscrito na lista."
 #: ../classes/views/class-sendpress-view-settings-activation.php:50
 #: ../classes/views/class-sendpress-view-settings-access.php:121
 #: ../classes/views/class-sendpress-view-settings-styles.php:141
-#: ../classes/views/class-sendpress-view-settings-account.php:68
-#: ../classes/views/class-sendpress-view-settings-account.php:208
+#: ../classes/views/class-sendpress-view-settings-account.php:69
+#: ../classes/views/class-sendpress-view-settings-account.php:210
 msgid "Save"
 msgstr "Salvar"
 
@@ -995,12 +995,12 @@ msgid "Days"
 msgstr "Dias"
 
 #: ../classes/views/class-sendpress-view-queue-all.php:108
-#: ../classes/views/class-sendpress-view-queue.php:160
+#: ../classes/views/class-sendpress-view-queue.php:165
 msgid "You can adjust these settings here:"
 msgstr "Você pode ajustar esse limite aqui:"
 
 #: ../classes/views/class-sendpress-view-queue-all.php:108
-#: ../classes/views/class-sendpress-view-queue.php:160
+#: ../classes/views/class-sendpress-view-queue.php:165
 msgid "Settings > Advanced"
 msgstr "Configurações > Avançado"
 
@@ -1052,59 +1052,75 @@ msgstr "Enviar e-mails Agora"
 msgid "Unlimited"
 msgstr "Ilimitado"
 
-#: ../classes/views/class-sendpress-view-queue.php:157
 #: ../classes/views/class-sendpress-view-queue.php:158
+msgid "You have"
+msgstr "Você tem"
+
+#: ../classes/views/class-sendpress-view-queue.php:158
+msgid "credits"
+msgstr "crédito(s)"
+
+#: ../classes/views/class-sendpress-view-queue.php:160
+msgid ""
+"You don't have any credits. To send the emails in your queue or send new "
+"emails, you need to get more credits."
+msgstr ""
+"Você não tem mais créditos. Para enviar os e-mails na sua fila ou mesmo "
+"enviar novos e-mails, você precisa obter mais créditos."
+
+#: ../classes/views/class-sendpress-view-queue.php:162
+#: ../classes/views/class-sendpress-view-queue.php:163
 msgid "of a possible"
 msgstr "de um possível de"
 
-#: ../classes/views/class-sendpress-view-queue.php:157
+#: ../classes/views/class-sendpress-view-queue.php:162
 msgid "emails sent in the last 24 hours"
 msgstr "e-mails enviados nas últimas 24 horas"
 
-#: ../classes/views/class-sendpress-view-queue.php:158
+#: ../classes/views/class-sendpress-view-queue.php:163
 msgid "emails sent in the last hour"
 msgstr "e-mails enviados na última hora"
 
-#: ../classes/views/class-sendpress-view-queue.php:167
+#: ../classes/views/class-sendpress-view-queue.php:172
 msgid "The cron will run again around:"
 msgstr "O envio rodará de novo: "
 
-#: ../classes/views/class-sendpress-view-queue.php:182
+#: ../classes/views/class-sendpress-view-queue.php:187
 msgid "Re-queue All Emails"
 msgstr "Reenviar todos os e-mails"
 
-#: ../classes/views/class-sendpress-view-queue.php:187
+#: ../classes/views/class-sendpress-view-queue.php:192
 msgid "Delete All Emails in the Queue"
 msgstr "Excluir todos os e-mails na fila"
 
-#: ../classes/views/class-sendpress-view-queue.php:195
+#: ../classes/views/class-sendpress-view-queue.php:200
 msgid "Really? Delete All Emails in the Queue."
 msgstr "Isso excluirá todos os e-mails na fila. Tem certeza?"
 
-#: ../classes/views/class-sendpress-view-queue.php:198
+#: ../classes/views/class-sendpress-view-queue.php:203
 msgid ""
 "This will remove all emails from the queue without attempting to send them"
 msgstr "Isto irá remover todos os e-mails da fila sem tentar enviá-los"
 
-#: ../classes/views/class-sendpress-view-queue.php:201
+#: ../classes/views/class-sendpress-view-queue.php:206
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:91
 #: ../classes/views/class-sendpress-view-subscribers-all.php:116
 msgid "No! I was Joking"
 msgstr "Não! Eu estava brincando"
 
-#: ../classes/views/class-sendpress-view-queue.php:201
+#: ../classes/views/class-sendpress-view-queue.php:206
 msgid "Yes! Delete All Emails"
 msgstr "Sim! Excluir todos os e-mails"
 
-#: ../classes/views/class-sendpress-view-queue.php:211
+#: ../classes/views/class-sendpress-view-queue.php:216
 msgid "Sending Emails"
 msgstr "E-mails sendo enviados"
 
-#: ../classes/views/class-sendpress-view-queue.php:219
+#: ../classes/views/class-sendpress-view-queue.php:224
 msgid "of"
 msgstr "das"
 
-#: ../classes/views/class-sendpress-view-queue.php:238
+#: ../classes/views/class-sendpress-view-queue.php:243
 msgid "If you close this window sending will stop. "
 msgstr "Se você fechar esta janela o envio vai parar. "
 
@@ -1511,44 +1527,52 @@ msgstr "Data"
 msgid "Delete Scheduled Email"
 msgstr "Excluir envio agendado"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:73
+#: ../classes/views/class-sendpress-view-settings-account.php:74
 msgid "Sending Account Setup"
 msgstr "Conta de envio"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:87
+#: ../classes/views/class-sendpress-view-settings-account.php:88
 msgid "Send Emails via"
 msgstr "Enviar e-mails por"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:140
+#: ../classes/views/class-sendpress-view-settings-account.php:141
 msgid "Advanced Sending Options"
 msgstr "Opções avançadas de envio"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:145
+#: ../classes/views/class-sendpress-view-settings-account.php:146
 msgid "Email Sending Limits"
 msgstr "Limites de envio"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:158
-#, php-format
-msgid "You have sent <strong>%s</strong> emails so far today."
-msgstr "Você enviou <strong>%s</strong> e-mails hoje."
-
 #: ../classes/views/class-sendpress-view-settings-account.php:159
+#, php-format
+msgid ""
+"You have sent <strong>%s</strong> emails so far today and you have <strong>"
+"%s</strong> credits remaining."
+msgstr ""
+"Você enviou <strong>%s</strong> e-mails hoje e você tem ainda <strong>%s</"
+"strong> créditos."
+
+#: ../classes/views/class-sendpress-view-settings-account.php:160
 msgid "Emails Per Day"
 msgstr "E-mails por dia"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:160
+#: ../classes/views/class-sendpress-view-settings-account.php:161
 msgid "Emails Per Hour"
 msgstr "E-mails por hora"
 
 #: ../classes/views/class-sendpress-view-settings-account.php:162
+msgid "Available credits"
+msgstr "Créditos disponíveis"
+
+#: ../classes/views/class-sendpress-view-settings-account.php:164
 msgid "Email Encoding"
 msgstr "Estrutura do e-mail"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:165
+#: ../classes/views/class-sendpress-view-settings-account.php:167
 msgid "Charset: "
 msgstr "Codificação de caracteres:"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:180
+#: ../classes/views/class-sendpress-view-settings-account.php:182
 msgid ""
 "Squares or weird characters displaying in your emails select the charset for "
 "your language."
@@ -1556,45 +1580,45 @@ msgstr ""
 "Se você ver caracteres estranhos sendo mostrados no seu e-mail, tente "
 "modificar aqui."
 
-#: ../classes/views/class-sendpress-view-settings-account.php:182
+#: ../classes/views/class-sendpress-view-settings-account.php:184
 msgid "Encoding:"
 msgstr "Encoding:"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:214
+#: ../classes/views/class-sendpress-view-settings-account.php:216
 msgid ""
 "<b>NOTE: </b>Remember to check your Spam folder if you do not seem to be "
 "receiving emails"
 msgstr "<b> NOTA: </ b> Lembre-se de verificar a sua pasta de Spam."
 
-#: ../classes/views/class-sendpress-view-settings-account.php:219
+#: ../classes/views/class-sendpress-view-settings-account.php:221
 msgid "Send Test Email"
 msgstr "Jaiminho :) e-mail de teste."
 
-#: ../classes/views/class-sendpress-view-settings-account.php:225
+#: ../classes/views/class-sendpress-view-settings-account.php:227
 msgid "Send Test!"
 msgstr "Envio test!"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:225
+#: ../classes/views/class-sendpress-view-settings-account.php:227
 msgid "Debug Info"
 msgstr "Debug Info"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:262
+#: ../classes/views/class-sendpress-view-settings-account.php:264
 msgid "SMTP Debug Info"
 msgstr "SMTP Debug Info"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:280
+#: ../classes/views/class-sendpress-view-settings-account.php:282
 msgid "Port 25 seems to be blocked."
 msgstr "Porta 25 parece estar bloqueada."
 
-#: ../classes/views/class-sendpress-view-settings-account.php:286
+#: ../classes/views/class-sendpress-view-settings-account.php:288
 msgid "Port 465 seems to be blocked. Gmail may have trouble"
 msgstr "Porta 465 parece estar bloqueada. O Gmail pode ter problemas"
 
-#: ../classes/views/class-sendpress-view-settings-account.php:292
+#: ../classes/views/class-sendpress-view-settings-account.php:294
 msgid "Port 587 seems to be blocked."
 msgstr "Port 587 parece estar bloqueada."
 
-#: ../classes/views/class-sendpress-view-settings-account.php:309
+#: ../classes/views/class-sendpress-view-settings-account.php:311
 msgid "No Debug info saved."
 msgstr "Nenhuma informação de Debug salvo."
 
