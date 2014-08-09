@@ -147,13 +147,18 @@ echo $time;//11:09
 			$emails_per_day = __('Unlimited','sendpress');
 		}
 	  $emails_per_hour =  SendPress_Option::get('emails-per-hour');
+      $credits = SendPress_Option::get('emails-credits');
 	  $hourly_emails = SendPress_Data::emails_sent_in_queue("hour");
 	  $emails_so_far = SendPress_Data::emails_sent_in_queue("day");
 	  $autocron = SendPress_Option::get('autocron','no');
 		//print_r(SendPress_Data::emails_stuck_in_queue());
 		?>
 
-		
+
+        <h2><?php _e('You have', 'sendpress');?> <strong><?php echo $credits; ?></strong> <?php _e('credits', 'sendpress');?>.</h2>
+        <?php if ($credits <= 0) { ?>
+            <small style="color:red;"><?php _e('You don\'t have any credits. To send the emails in your queue or send new emails, you need to get more credits.', 'sendpress'); ?></small>
+        <?php } ?>
 		<h2><strong><?php echo $emails_so_far; ?></strong> <?php _e('of a possible','sendpress'); ?> <strong><?php echo $emails_per_day; ?></strong> <?php _e('emails sent in the last 24 hours','sendpress'); ?>.</h2>
 		<h2><strong><?php  echo $hourly_emails; ?></strong> <?php _e('of a possible','sendpress'); ?> <strong><?php echo $emails_per_hour; ?></strong> <?php _e('emails sent in the last hour','sendpress'); ?>.</h2>
         <?php if ((is_multisite() && is_super_admin()) || !is_multisite()) { ?>
