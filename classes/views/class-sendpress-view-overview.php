@@ -193,7 +193,7 @@ list( $display_version ) = explode( '-', $wp_version );
 
   			$d = 	SendPress_Data::get_subscriber($item->subscriberID);
         if(property_exists($item,'eventdate')){
-  			   echo date_i18n("m.d.Y" ,strtotime($item->eventdate) );
+  			   echo date_i18n(get_option('date_format'), strtotime($item->eventdate) );
         }
         if(is_object($d)){
   			echo "<span class='sp-email'>" . $d->email . "</span>";
