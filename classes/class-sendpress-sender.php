@@ -104,9 +104,6 @@ class SendPress_Sender {
 		return $data;
 	}
 
-
-
-
 }
 
 }

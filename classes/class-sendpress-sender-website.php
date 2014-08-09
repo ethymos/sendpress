@@ -96,12 +96,11 @@ if (!class_exists('SendPress_Sender_Website')) {
                 $html = $this->change($html, 'UTF-8', $charset);
                 $text = $this->change($text, 'UTF-8', $charset);
                 $subject = $this->change($subject, 'UTF-8', $charset);
-            }
 
-            //$subject = str_replace(array('â€™','â€œ','â€�','â€“'),array("'",'"','"','-'),$subject);
-            //$html = str_replace(chr(194),chr(32),$html);
-            //$text = str_replace(chr(194),chr(32),$text);
-            //return $email;
+                $subject = str_replace(array('â€™','â€œ','â€�','â€“'),array("'",'"','"','-'),$subject);
+                $html = str_replace(chr(194),chr(32),$html);
+                $text = str_replace(chr(194),chr(32),$text);
+            }
 
             $phpmailer->AddAddress(trim($to));
             $phpmailer->AltBody = $text;
@@ -110,8 +109,9 @@ if (!class_exists('SendPress_Sender_Website')) {
             $phpmailer->MsgHTML($html);
             $phpmailer->ContentType = $content_type;
             // Set whether it's plaintext, depending on $content_type
-            //if ( 'text/html' == $content_type )
-            $phpmailer->IsHTML(true);
+            if ( 'text/html' == $content_type ) {
+                $phpmailer->IsHTML(true);
+            }
 
             $phpmailer->Mailer = 'smtp';
             // We are sending SMTP mail
@@ -127,9 +127,10 @@ if (!class_exists('SendPress_Sender_Website')) {
             $phpmailer->Password = SendPress_Option::get('smtppass');
 
             // If we don't have a charset from the input headers
-            //if ( !isset( $charset ) )
-            //$charset = get_bloginfo( 'charset' );
-            // Set the content-type and charset
+            if ( !isset( $charset ) ) {
+                $charset = get_bloginfo( 'charset' );
+                // Set the content-type and charset
+            }
 
             /**
              * We'll let php init mess with the message body and headers.  But then
@@ -159,18 +160,17 @@ if (!class_exists('SendPress_Sender_Website')) {
                 ob_start();
             }
 
-
             // Send!
             $result = true; // start with true, meaning no error
             $result = @$phpmailer->Send();
 
-            //$phpmailer->SMTPClose();
+            $phpmailer->SMTPClose();
             if ($istest == true) {
                 // Grab the smtp debugging output
                 $smtp_debug = ob_get_clean();
                 SendPress_Option::set('phpmailer_error', $phpmailer->ErrorInfo);
                 SendPress_Option::set('last_test_debug', $smtp_debug);
-                //$this->last_send_smtp_debug = $smtp_debug;
+                $this->last_send_smtp_debug = $smtp_debug;
 
             }
 
@@ -182,9 +182,9 @@ if (!class_exists('SendPress_Sender_Website')) {
                 $msg .= $hostmsg;
                 $msg .= __("The SMTP debugging output is shown below:\n", "sendpress");
                 $msg .= $smtp_debug . "\n";
-                //$msg .= 'The full debugging output(exported mailer) is shown below:\n';
-                //$msg .= var_export($phpmailer,true)."\n";
-                //$this->append_log($msg);
+                $msg .= 'The full debugging output(exported mailer) is shown below:\n';
+                $msg .= var_export($phpmailer,true)."\n";
+                $this->append_log($msg);
             }
 
             return $result;

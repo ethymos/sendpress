@@ -12,6 +12,11 @@ class SendPress_Manager {
 		global $wpdb;
 		$emails_per_hour = SendPress_Option::get('emails-per-hour');
 		$emails_per_day = SendPress_Option::get('emails-per-day');
+        $credits = SendPress_Option::get('emails-credits');
+
+        if ($credits <= 0 ) {
+            return true;
+        }
 
 		$email_count_day = SendPress_Data::emails_sent_in_queue("day");
 		// Check our daily send limit
@@ -126,8 +131,11 @@ class SendPress_Manager {
 		return $link;
 	}
 
-	
-
+	static function decrease_credit ($amount = 1)
+    {
+        $credits = SendPress_Option::get('emails-credits');
+        SendPress_Option::set('emails-credits', $credits - $amount);
+    }
 
 	static function increase_email_count( $add = 1 ){
 		$emails_today =  SendPress_Option::get('emails-today');
@@ -187,19 +195,18 @@ class SendPress_Manager {
 	static function send_single_from_queue(){
 		
 		global $wpdb;
-		//$emails = $this->wpdbQuery("SELECT * FROM ".$this->queue_table()." WHERE success = 0 AND max_attempts != attempts LIMIT ".$limit,"get_results");
+
+        $queue_table = SendPress_Data::queue_table();
 		$count = 0;
 		$attempts = 0;
-		$queue_table = SendPress_Data::queue_table();
+
 		if( SendPress_Manager::limit_reached()  ){
 			return array('attempted'=> $attempts,'sent'=>$count);
 		}
+
 		SendPress_Error::log('here');
 		$email = SendPress_Data::get_single_email_from_queue();
 		if( is_object($email) ){
-			//$email = $email[0];
-			
-
 			if( SendPress_Manager::limit_reached() ){
 				return array('attempted'=> $attempts,'sent'=>$count);
 			}
@@ -211,16 +218,11 @@ class SendPress_Manager {
 			
 			if ($result) {
 				$wpdb->update( $queue_table , array('success'=>1,'inprocess'=>3 ) , array('id'=> $email->id ));
-				$senddata = array(
-					'sendat' => date('Y-m-d H:i:s'),
-					'reportID' => $email->emailID,
-					'subscriberID' => $email->subscriberID
-				);
 
-				//$wpdb->insert( $this->subscriber_open_table(),  $senddata);
 				$count++;
 				SendPress_Data::register_event( 'send', $email->subscriberID, $email->emailID );
-				//SendPress_Data::update_report_sent_count( $email->emailID );
+				SendPress_Data::update_report_sent_count( $email->emailID );
+                SendPress_Manager::decrease_credit();
 			} else {
 				$wpdb->update($queue_table , array('attempts'=>$email->attempts+1,'inprocess'=>0,'last_attempt'=> date('Y-m-d H:i:s') ) , array('id'=> $email->id ));
 			}
@@ -228,7 +230,7 @@ class SendPress_Manager {
 			return array('attempted'=> $attempts,'sent'=>$count);
 		}
 
-		//SendPress_Manager::increase_email_count( $attempts );
+		SendPress_Manager::increase_email_count( $attempts );
 		return array('attempted'=> $attempts,'sent'=>$count);
 	}
 

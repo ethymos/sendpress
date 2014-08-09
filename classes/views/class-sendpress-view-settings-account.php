@@ -22,6 +22,7 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
         $chars = array(".", ",", " ", ":", ";", "$", "%", "*", "-", "=");
         $options['emails-per-day'] = str_replace($chars, "", $_POST['emails-per-day']);
         $options['emails-per-hour'] = str_replace($chars, "", $_POST['emails-per-hour']);
+        $options['emails-credits'] = str_replace($chars, "", $_POST['emails-credits']);
         $options['email-charset'] = $_POST['email-charset'];
         $options['email-encoding'] = $_POST['email-encoding'];
 
@@ -147,17 +148,18 @@ class SendPress_View_Settings_Account extends SendPress_View_Settings {
 <?php
   $emails_per_day = SendPress_Option::get('emails-per-day');
   $emails_per_hour =  SendPress_Option::get('emails-per-hour');
+  $credits = SendPress_Option::get('emails-credits');
  
-  $hourly_emails = SendPress_Data::emails_sent_in_queue("hour");
   $emails_so_far = SendPress_Data::emails_sent_in_queue("day");
 ?><?php
 $offset = get_option( 'gmt_offset' ) * 60 * 60; // Time offset in seconds
 $local_timestamp = wp_next_scheduled('sendpress_cron_action') + $offset;
 //print_r(wp_get_schedules());
 ?>
-<?php sprintf(__('You have sent <strong>%s</strong> emails so far today.', 'sendpress'), $emails_so_far); ?><br><br>
+<?php sprintf(__('You have sent <strong>%s</strong> emails so far today and you have <strong>%s</strong> credits remaining.', 'sendpress'), $emails_so_far, $credits); ?><br><br>
 <input type="text" size="6" name="emails-per-day" value="<?php echo $emails_per_day; ?>" /> <?php _e('Emails Per Day', 'sendpress'); ?><br><br>
-<input type="text" size="6" name="emails-per-hour" value="<?php echo $emails_per_hour; ?>" /> <?php _e('Emails Per Hour', 'sendpress'); ?>
+<input type="text" size="6" name="emails-per-hour" value="<?php echo $emails_per_hour; ?>" /> <?php _e('Emails Per Hour', 'sendpress'); ?><br><br>
+<input type="text" size="6" name="emails-credits" value="<?php echo $credits; ?>" /> <?php _e('Available credits', 'sendpress'); ?>
 <br><br>
 <h2><?php _e('Email Encoding', 'sendpress'); ?></h2>
 <?php
