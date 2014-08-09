@@ -301,8 +301,13 @@ class SendPress_Manager {
 	   	$subject = $message->subject();
 	   	$to = $email->to_email;
 	   	$text = $message->text();
-	   	return SendPress_Manager::send($to , $subject, $body, $text, false, $email->subscriberID ,$email->listID, $email->emailID );
-	   
+	   	$result = SendPress_Manager::send($to , $subject, $body, $text, false, $email->subscriberID ,$email->listID, $email->emailID );
+
+        if ($result) {
+            SendPress_Manager::decrease_credit();
+        }
+
+        return $result;
 	}
 
 	/**
