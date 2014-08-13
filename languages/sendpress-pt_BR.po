@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jaiminho/SendPress\n"
-"POT-Creation-Date: 2014-08-12 23:41-0300\n"
+"POT-Creation-Date: 2014-08-13 00:00-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
 "Language-Team: \n"
@@ -311,6 +311,7 @@ msgstr "Uma vez por mês"
 #: ../classes/views/class-sendpress-view-subscribers-subscriber.php:130
 #: ../classes/views/class-sendpress-view-subscribers-csvprep.php:109
 #: ../classes/public-views/class-sendpress-public-view-manage.php:128
+#: ../inc/forms/email-style.2.0.php:486
 msgid "Email"
 msgstr "E-mail"
 
@@ -446,10 +447,12 @@ msgid "SendPress Signup"
 msgstr "Cadastre-se no Jaiminho"
 
 #: ../classes/class-sendpress-widget-signup.php:163
+#: ../inc/forms/email-style.2.0.php:476
 msgid "First Name"
 msgstr "Nome"
 
 #: ../classes/class-sendpress-widget-signup.php:164
+#: ../inc/forms/email-style.2.0.php:481
 msgid "Last Name"
 msgstr "Sobrenome"
 
@@ -706,6 +709,7 @@ msgstr "Iniciar tour"
 #: ../classes/class-sendpress-tour.php:88
 #: ../classes/views/class-sendpress-view-queue.php:239
 #: ../classes/views/class-sendpress-view-settings-account.php:319
+#: ../inc/forms/email-style.2.0.php:561
 msgid "Close"
 msgstr "Fechar"
 
@@ -1872,6 +1876,112 @@ msgstr "Estilos de cabeçalho"
 #: ../inc/forms/email-style.2.0.php:235
 msgid "Content Styles"
 msgstr "Estilos conteúdo"
+
+#: ../inc/forms/email-style.2.0.php:395
+msgid "Single Post"
+msgstr "Inserir um Post"
+
+#: ../inc/forms/email-style.2.0.php:396
+msgid "Personalize"
+msgstr "Personalizar"
+
+#: ../inc/forms/email-style.2.0.php:410
+msgid "Search Posts:"
+msgstr "Procurar post:"
+
+#: ../inc/forms/email-style.2.0.php:412
+msgid "No Post Selected"
+msgstr "Nenhum Post Selecionado"
+
+#: ../inc/forms/email-style.2.0.php:415
+msgid "Header HTML:"
+msgstr "Cabeçalho HTML:"
+
+#: ../inc/forms/email-style.2.0.php:441
+msgid "Header Link:"
+msgstr "Link do cabeçalho:"
+
+#: ../inc/forms/email-style.2.0.php:444
+msgid "Link Header to Post"
+msgstr "Colocar link no cabeçalho do Post"
+
+#: ../inc/forms/email-style.2.0.php:448
+msgid "Don't Link Header to Post"
+msgstr "Não lincar o cabeçalho do Post"
+
+#: ../inc/forms/email-style.2.0.php:451
+msgid "Post Content:"
+msgstr "Conteúdo do Post:"
+
+#: ../inc/forms/email-style.2.0.php:454
+msgid "Excerpt"
+msgstr "Resumo"
+
+#: ../inc/forms/email-style.2.0.php:458
+msgid "Full Post"
+msgstr "Post inteiro"
+
+#: ../inc/forms/email-style.2.0.php:461 ../inc/forms/email-style.2.0.php:478
+#: ../inc/forms/email-style.2.0.php:483 ../inc/forms/email-style.2.0.php:488
+#: ../inc/forms/email-style.2.0.php:507 ../inc/forms/email-style.2.0.php:512
+#: ../inc/forms/email-style.2.0.php:517 ../inc/forms/email-style.2.0.php:536
+#: ../inc/forms/email-style.2.0.php:541 ../inc/forms/email-style.2.0.php:546
+msgid "Insert"
+msgstr "Inserir"
+
+#: ../inc/forms/email-style.2.0.php:464
+msgid "Subscriber specific content"
+msgstr "Informaçoes específicas do assinante"
+
+#: ../inc/forms/email-style.2.0.php:469 ../inc/forms/email-style.2.0.php:498
+#: ../inc/forms/email-style.2.0.php:527
+msgid "Description"
+msgstr "Descrição:"
+
+#: ../inc/forms/email-style.2.0.php:470 ../inc/forms/email-style.2.0.php:499
+#: ../inc/forms/email-style.2.0.php:528
+msgid "Code"
+msgstr "Código"
+
+#: ../inc/forms/email-style.2.0.php:493
+msgid "Site specific content"
+msgstr "Conteúdos específicos do site"
+
+#: ../inc/forms/email-style.2.0.php:505
+msgid "Website URL"
+msgstr "URL do Site"
+
+#: ../inc/forms/email-style.2.0.php:510
+msgid "Website Title"
+msgstr "Título do Site"
+
+#: ../inc/forms/email-style.2.0.php:515
+msgid "Website Description"
+msgstr "Descrição do Site:"
+
+#: ../inc/forms/email-style.2.0.php:522
+msgid "Date and Time"
+msgstr "Data & Hora"
+
+#: ../inc/forms/email-style.2.0.php:534
+msgid "Current Date"
+msgstr "Data atual"
+
+#: ../inc/forms/email-style.2.0.php:534
+msgid "Format based on WordPress settings."
+msgstr "Formatada baseada nas configurações do WordPress"
+
+#: ../inc/forms/email-style.2.0.php:539
+msgid "Current Time"
+msgstr "Hora Atual"
+
+#: ../inc/forms/email-style.2.0.php:544
+msgid "Custom Date"
+msgstr "Data customizada"
+
+#: ../inc/forms/email-style.2.0.php:544
+msgid "March 10, 2001, 5:16 pm"
+msgstr "Março 10, 2001, 5:16 pm"
 
 #, fuzzy
 #~ msgid "Select the notifications you"
