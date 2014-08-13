@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jaiminho/SendPress\n"
-"POT-Creation-Date: 2014-08-12 23:29-0300\n"
+"POT-Creation-Date: 2014-08-12 23:41-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
 "Language-Team: \n"
@@ -1426,6 +1426,15 @@ msgstr "Enviar mais tarde"
 #: ../classes/views/class-sendpress-view-emails-send.php:97
 msgid "at"
 msgstr "às"
+
+#: ../classes/views/class-sendpress-view-emails-send.php:189
+#: ../classes/views/class-sendpress-view-emails-send-confirm.php:194
+#, php-format
+msgid ""
+"Displaying a 404? Please try saving your permalinks <a href=\"%s\">here</a>"
+msgstr ""
+"Está aparecendo um erro de página não encontrada? Por favor, tente salvar "
+"seus links permanentes  <a href=\"%s\">aqui</a>"
 
 #: ../classes/views/class-sendpress-view-settings-access.php:127
 msgid "Role"
