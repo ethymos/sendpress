@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jaiminho/SendPress\n"
-"POT-Creation-Date: 2014-08-09 18:30-0300\n"
+"POT-Creation-Date: 2014-08-12 23:29-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marco Antonio Konopacki <marcoamarelo@gmail.com>\n"
 "Language-Team: \n"
@@ -46,30 +46,34 @@ msgstr ""
 "favor, verifique suas configurações <a href=\"%1$s\"> widgets </ a> para "
 "reativar sua lista (s). | <a Href=\"%2$s\"> Esconder Notice </ a>"
 
-#: ../sendpress.php:811
+#: ../sendpress.php:660
+msgid "Email Status"
+msgstr "Status do E-mail"
+
+#: ../sendpress.php:805
 msgid "Please enter your e-mail address"
 msgstr "Digite seu endereço de e-mail"
 
-#: ../sendpress.php:834
+#: ../sendpress.php:828
 msgid "Use this Image"
 msgstr "Use essa imagem"
 
-#: ../sendpress.php:835
+#: ../sendpress.php:829
 #, php-format
 msgid "Use as %s"
 msgstr "Uso como% s"
 
-#: ../sendpress.php:871 ../sendpress.php:874 ../sendpress.php:880
+#: ../sendpress.php:865 ../sendpress.php:868 ../sendpress.php:874
 #: ../classes/views/class-sendpress-view-emails-style.php:142
 msgid "Update"
 msgstr "Atualizar"
 
-#: ../sendpress.php:871 ../sendpress.php:886
+#: ../sendpress.php:865 ../sendpress.php:880
 #: ../classes/views/class-sendpress-view-emails-create.php:64
 msgid "Save & Next"
 msgstr "Salvar e ir para o Próximo"
 
-#: ../sendpress.php:876 ../sendpress.php:880 ../sendpress.php:883
+#: ../sendpress.php:870 ../sendpress.php:874 ../sendpress.php:877
 #: ../classes/class-sendpress-email-templates-table.php:102
 #: ../classes/class-sendpress-emails-table.php:102
 #: ../classes/views/class-sendpress-view-emails-style.php:144
@@ -78,7 +82,7 @@ msgstr "Salvar e ir para o Próximo"
 msgid "Send"
 msgstr "Enviar"
 
-#: ../sendpress.php:883
+#: ../sendpress.php:877
 #: ../classes/class-sendpress-email-templates-table.php:99
 #: ../classes/class-sendpress-email-templates-table.php:134
 #: ../classes/class-sendpress-emails-table.php:99
@@ -88,7 +92,7 @@ msgstr "Enviar"
 msgid "Edit"
 msgstr "Editar"
 
-#: ../sendpress.php:890
+#: ../sendpress.php:884
 #: ../classes/views/class-sendpress-view-settings-notifications.php:57
 #: ../classes/views/class-sendpress-view-emails-style.php:139
 #: ../classes/views/class-sendpress-view-help.php:304
@@ -104,31 +108,31 @@ msgstr "Editar"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../sendpress.php:959
+#: ../sendpress.php:953
 msgid "SendPress"
 msgstr "Jaiminho"
 
-#: ../sendpress.php:961
+#: ../sendpress.php:955
 msgid "Pro"
 msgstr "Pró"
 
-#: ../sendpress.php:965
+#: ../sendpress.php:959
 msgid "Overview"
 msgstr "Visão geral"
 
-#: ../sendpress.php:966 ../sendpress.php:987
+#: ../sendpress.php:960 ../sendpress.php:981
 #: ../classes/views/class-sendpress-view-emails.php:88
 #: ../classes/views/class-sendpress-view-settings-access.php:128
 msgid "Emails"
 msgstr "Emails"
 
-#: ../sendpress.php:968 ../sendpress.php:988
+#: ../sendpress.php:962 ../sendpress.php:982
 #: ../classes/views/class-sendpress-view-reports.php:36
 #: ../classes/views/class-sendpress-view-settings-access.php:129
 msgid "Reports"
 msgstr "Relatórios"
 
-#: ../sendpress.php:969 ../sendpress.php:989
+#: ../sendpress.php:963 ../sendpress.php:983
 #: ../classes/class-sendpress-lists-table.php:226
 #: ../classes/views/class-sendpress-view-overview.php:56
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:54
@@ -137,19 +141,19 @@ msgstr "Relatórios"
 msgid "Subscribers"
 msgstr "Inscritos"
 
-#: ../sendpress.php:970 ../sendpress.php:990
+#: ../sendpress.php:964 ../sendpress.php:984
 #: ../classes/views/class-sendpress-view-settings-access.php:132
 msgid "Queue"
 msgstr "Fila"
 
-#: ../sendpress.php:971 ../sendpress.php:991
+#: ../sendpress.php:965 ../sendpress.php:985
 #: ../classes/views/class-sendpress-view-emails-send.php:161
 #: ../classes/views/class-sendpress-view-settings-access.php:131
 #: ../classes/views/class-sendpress-view-settings.php:26
 msgid "Settings"
 msgstr "Configurações"
 
-#: ../sendpress.php:1507
+#: ../sendpress.php:1501
 #, php-format
 msgid "SendPress requires WordPress version %s or later."
 msgstr "O Jaiminho requer WordPress versão %s ou posterior."
@@ -212,6 +216,54 @@ msgstr "Páginas do Jaiminho"
 #: ../classes/class-sendpress-posts.php:229
 msgid "SendPress Page"
 msgstr "Página do Jaiminho"
+
+#: ../classes/class-sendpress-data.php:1399
+msgid "Please respond to join the *|SITE:TITLE|* email list."
+msgstr "Confirme se quer receber e-mails de |SITE:TITLE| ."
+
+#: ../classes/class-sendpress-data.php:1403
+msgid ""
+"Howdy.\n"
+"\n"
+"We're ready to send you emails from *|SITE:TITLE|*, but first we need you to "
+"confirm that this is what you really want.\n"
+"\n"
+"If you want *|SITE:TITLE|* content delivered by email, all you have to do is "
+"click the link below. Thanks!\n"
+"\n"
+"-----------------------------------------------------------\n"
+"CONFIRM BY VISITING THE LINK BELOW:\n"
+"\n"
+"*|SP:CONFIRMLINK|*\n"
+"\n"
+"Click the link above to give us permission to send you\n"
+"information.  It's fast and easy!  If you cannot click the\n"
+"full URL above, please copy and paste it into your web\n"
+"browser.\n"
+"\n"
+"-----------------------------------------------------------\n"
+"If you do not want to confirm, simply ignore this message.\n"
+msgstr ""
+"Olá.\n"
+"\n"
+"Falta pouco para podermos enviar para você e-mail do site |SITE:TITLE|, mas "
+"antes disto precisaoms que você confirme que você realmente quer receber "
+"nossas informações.\n"
+"\n"
+"Se você quer receber informações do |SITE:TITLE| no seu e-mail, você só "
+"precisa clicar no linque abaixo. Muito obrigado!\n"
+"\n"
+"———————————————————–\n"
+"CONFIRME UTILIZANDO O LINQUE ABAIXO:\n"
+"\n"
+"|SP:CONFIRMLINK|\n"
+"\n"
+"Clique no linque acima para nos dar permissão de te enviar informações. É "
+"rápido e fácil!\n"
+"Se você não conseguir clicar, copie e cole o linque o seu navegador.\n"
+"\n"
+"———————————————————–\n"
+"Se você não quiser receber e-mails, simplesmente ignore esta mensagem.\n"
 
 #: ../classes/class-sendpress-cron.php:80
 msgid "Once every minutes"
@@ -520,19 +572,19 @@ msgstr "E-mail teste do Jaiminho."
 msgid "SendPress test email :)."
 msgstr "Jaiminho :) e-mail de teste."
 
-#: ../classes/class-sendpress-manager.php:442
+#: ../classes/class-sendpress-manager.php:447
 #: ../classes/class-sendpress-sender-gmail.php:158
 #: ../classes/class-sendpress-sender-website.php:180
 msgid "The result was: "
 msgstr "O resultado foi:"
 
-#: ../classes/class-sendpress-manager.php:443
+#: ../classes/class-sendpress-manager.php:448
 #: ../classes/class-sendpress-sender-gmail.php:159
 #: ../classes/class-sendpress-sender-website.php:181
 msgid "The mailer error info: "
 msgstr "A informação de erro do envio:"
 
-#: ../classes/class-sendpress-manager.php:445
+#: ../classes/class-sendpress-manager.php:450
 #: ../classes/class-sendpress-sender-gmail.php:161
 #: ../classes/class-sendpress-sender-website.php:183
 msgid "The SMTP debugging output is shown below:\n"
@@ -591,7 +643,7 @@ msgid "Name"
 msgstr "Nome"
 
 #: ../classes/class-sendpress-lists-table.php:223
-#: ../classes/views/class-sendpress-view-queue.php:43
+#: ../classes/views/class-sendpress-view-queue.php:48
 msgid "Active"
 msgstr "Ativos"
 
@@ -652,7 +704,7 @@ msgid "Start Tour"
 msgstr "Iniciar tour"
 
 #: ../classes/class-sendpress-tour.php:88
-#: ../classes/views/class-sendpress-view-queue.php:243
+#: ../classes/views/class-sendpress-view-queue.php:239
 #: ../classes/views/class-sendpress-view-settings-account.php:319
 msgid "Close"
 msgstr "Fechar"
@@ -762,7 +814,7 @@ msgstr "Desinscrições:"
 #: ../classes/views/class-sendpress-view-queue-jobs.php:28
 #: ../classes/views/class-sendpress-view-emails-templates.php:23
 #: ../classes/views/class-sendpress-view-queue-all.php:32
-#: ../classes/views/class-sendpress-view-queue.php:63
+#: ../classes/views/class-sendpress-view-queue.php:70
 #: ../classes/views/class-sendpress-view-emails.php:23
 msgid "Emails per page"
 msgstr "E-mails por página"
@@ -986,21 +1038,21 @@ msgstr "Criar e-mail"
 msgid "Templates"
 msgstr "Modelos"
 
-#: ../classes/views/class-sendpress-view-queue-all.php:106
+#: ../classes/views/class-sendpress-view-queue-all.php:70
 msgid "Queue history for the last "
 msgstr "Histórico da fila para o último "
 
-#: ../classes/views/class-sendpress-view-queue-all.php:106
+#: ../classes/views/class-sendpress-view-queue-all.php:70
 msgid "Days"
 msgstr "Dias"
 
-#: ../classes/views/class-sendpress-view-queue-all.php:108
-#: ../classes/views/class-sendpress-view-queue.php:165
+#: ../classes/views/class-sendpress-view-queue-all.php:72
+#: ../classes/views/class-sendpress-view-queue.php:144
 msgid "You can adjust these settings here:"
 msgstr "Você pode ajustar esse limite aqui:"
 
-#: ../classes/views/class-sendpress-view-queue-all.php:108
-#: ../classes/views/class-sendpress-view-queue.php:165
+#: ../classes/views/class-sendpress-view-queue-all.php:72
+#: ../classes/views/class-sendpress-view-queue.php:145
 msgid "Settings > Advanced"
 msgstr "Configurações > Avançado"
 
@@ -1036,31 +1088,31 @@ msgstr ""
 "O número total de cliques ou aberturas que aconteceram. Independentemente de "
 "quem clicou ou abriu o e-mail."
 
-#: ../classes/views/class-sendpress-view-queue.php:38
+#: ../classes/views/class-sendpress-view-queue.php:42
 msgid "Queues"
 msgstr "Fila"
 
-#: ../classes/views/class-sendpress-view-queue.php:46
+#: ../classes/views/class-sendpress-view-queue.php:52
 msgid "Send History"
 msgstr "Histórico de envios"
 
-#: ../classes/views/class-sendpress-view-queue.php:142
+#: ../classes/views/class-sendpress-view-queue.php:114
 msgid "Send Emails Now"
 msgstr "Enviar e-mails Agora"
 
-#: ../classes/views/class-sendpress-view-queue.php:147
+#: ../classes/views/class-sendpress-view-queue.php:119
 msgid "Unlimited"
 msgstr "Ilimitado"
 
-#: ../classes/views/class-sendpress-view-queue.php:158
+#: ../classes/views/class-sendpress-view-queue.php:130
 msgid "You have"
 msgstr "Você tem"
 
-#: ../classes/views/class-sendpress-view-queue.php:158
+#: ../classes/views/class-sendpress-view-queue.php:131
 msgid "credits"
 msgstr "crédito(s)"
 
-#: ../classes/views/class-sendpress-view-queue.php:160
+#: ../classes/views/class-sendpress-view-queue.php:134
 msgid ""
 "You don't have any credits. To send the emails in your queue or send new "
 "emails, you need to get more credits."
@@ -1068,59 +1120,59 @@ msgstr ""
 "Você não tem mais créditos. Para enviar os e-mails na sua fila ou mesmo "
 "enviar novos e-mails, você precisa obter mais créditos."
 
-#: ../classes/views/class-sendpress-view-queue.php:162
-#: ../classes/views/class-sendpress-view-queue.php:163
+#: ../classes/views/class-sendpress-view-queue.php:136
+#: ../classes/views/class-sendpress-view-queue.php:140
 msgid "of a possible"
 msgstr "de um possível de"
 
-#: ../classes/views/class-sendpress-view-queue.php:162
+#: ../classes/views/class-sendpress-view-queue.php:137
 msgid "emails sent in the last 24 hours"
 msgstr "e-mails enviados nas últimas 24 horas"
 
-#: ../classes/views/class-sendpress-view-queue.php:163
+#: ../classes/views/class-sendpress-view-queue.php:141
 msgid "emails sent in the last hour"
 msgstr "e-mails enviados na última hora"
 
-#: ../classes/views/class-sendpress-view-queue.php:172
+#: ../classes/views/class-sendpress-view-queue.php:154
 msgid "The cron will run again around:"
 msgstr "O envio rodará de novo: "
 
-#: ../classes/views/class-sendpress-view-queue.php:187
+#: ../classes/views/class-sendpress-view-queue.php:170
 msgid "Re-queue All Emails"
 msgstr "Reenviar todos os e-mails"
 
-#: ../classes/views/class-sendpress-view-queue.php:192
+#: ../classes/views/class-sendpress-view-queue.php:176
 msgid "Delete All Emails in the Queue"
 msgstr "Excluir todos os e-mails na fila"
 
-#: ../classes/views/class-sendpress-view-queue.php:200
+#: ../classes/views/class-sendpress-view-queue.php:185
 msgid "Really? Delete All Emails in the Queue."
 msgstr "Isso excluirá todos os e-mails na fila. Tem certeza?"
 
-#: ../classes/views/class-sendpress-view-queue.php:203
+#: ../classes/views/class-sendpress-view-queue.php:188
 msgid ""
 "This will remove all emails from the queue without attempting to send them"
 msgstr "Isto irá remover todos os e-mails da fila sem tentar enviá-los"
 
-#: ../classes/views/class-sendpress-view-queue.php:206
+#: ../classes/views/class-sendpress-view-queue.php:193
 #: ../classes/views/class-sendpress-view-subscribers-subscribers.php:91
 #: ../classes/views/class-sendpress-view-subscribers-all.php:116
 msgid "No! I was Joking"
 msgstr "Não! Eu estava brincando"
 
-#: ../classes/views/class-sendpress-view-queue.php:206
+#: ../classes/views/class-sendpress-view-queue.php:195
 msgid "Yes! Delete All Emails"
 msgstr "Sim! Excluir todos os e-mails"
 
-#: ../classes/views/class-sendpress-view-queue.php:216
+#: ../classes/views/class-sendpress-view-queue.php:207
 msgid "Sending Emails"
 msgstr "E-mails sendo enviados"
 
-#: ../classes/views/class-sendpress-view-queue.php:224
+#: ../classes/views/class-sendpress-view-queue.php:215
 msgid "of"
 msgstr "das"
 
-#: ../classes/views/class-sendpress-view-queue.php:243
+#: ../classes/views/class-sendpress-view-queue.php:237
 msgid "If you close this window sending will stop. "
 msgstr "Se você fechar esta janela o envio vai parar. "
 
