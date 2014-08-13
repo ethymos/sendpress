@@ -191,7 +191,7 @@ $link = $url.$sep.'inline=true';
 ?>
 <iframe src="<?php echo $link; ?>" width="100%" height="600px"></iframe>
 
-<small>Displaying a 404? Please try saving your permalinks <a href="<?php echo admin_url('options-permalink.php'); ?>">here</a>.</small>
+<small><?php sprintf(__('Displaying a 404? Please try saving your permalinks <a href="%s">here</a>', 'sendpress'), admin_url('options-permalink.php')); ?>.</small>
 </div>
 <?php wp_nonce_field($sp->_nonce_value); ?><br><br>
 </div>
