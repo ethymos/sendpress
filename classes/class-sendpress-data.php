@@ -1396,11 +1396,11 @@ class SendPress_Data extends SendPress_DB_Tables {
 	}
 
 	static function optin_title(){
-		return "Please respond to join the *|SITE:TITLE|* email list.";
+		return __("Please respond to join the *|SITE:TITLE|* email list.", "sendpress");
 	}
 
 	static function optin_content(){
-		return "Howdy.
+		return __("Howdy.
 
 We're ready to send you emails from *|SITE:TITLE|*, but first we need you to confirm that this is what you really want.
 
@@ -1418,7 +1418,7 @@ browser.
 
 -----------------------------------------------------------
 If you do not want to confirm, simply ignore this message.
-";
+", "sendpress");
 	}
 
 
