@@ -436,8 +436,12 @@ Author URI: http://sendpress.com/
 		}
 	
 		function template_include( $template ) { 
-		  	global $post; 
-	
+		  	global $post;
+
+		  	if( get_query_var('jaiminho') || isset($_POST['jaiminho']) ) {
+		  		set_query_var('sendpress', isset($_POST['jaiminho']) ? $_POST['jaiminho'] : get_query_var( 'jaiminho' ) );
+		  	}
+		  	
 		  	if( (get_query_var( 'sendpress' )) || isset($_POST['sendpress']) ){
 			  	
 			  	$action = isset($_POST['sendpress']) ? $_POST['sendpress'] : get_query_var( 'sendpress' );
