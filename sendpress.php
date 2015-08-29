@@ -1661,7 +1661,30 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 	}
 
 	static function fetch_mail_from_queue(){
+		
 		@ini_set('max_execution_time',0);
+		
+		$sem = @sem_get( get_current_blog_id() );
+		$sem_a = @sem_acquire($sem);
+		if(!$sem_a)
+		{
+			@sem_release($sem);
+			@sem_remove($sem);
+			return;
+		}
+		$doing_cron = get_option('doing_sendpress_cron', false);
+		if($doing_cron)
+		{
+			@sem_release($sem);
+			@sem_remove($sem);
+			return;
+		}
+		
+		update_option('doing_sendpress_cron', true);
+		
+		@sem_release($sem);
+		@sem_remove($sem);
+		
 		global $wpdb;
 		$count = SendPress_Option::get('emails-per-hour');
 		$emails_per_hour = SendPress_Option::get('emails-per-hour');
@@ -1669,6 +1692,7 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
         $email_count = 0;
 		
 		if( SendPress_Manager::limit_reached()  ){
+			update_option('doing_sendpress_cron', false);
 			return;
 		}
 
@@ -1702,7 +1726,8 @@ wp_register_style( 'sendpress_css_admin', SENDPRESS_URL . 'css/admin.css', false
 					break;
 				}
 		}
-
+		
+		update_option('doing_sendpress_cron', false);
 
 		return;
 		
