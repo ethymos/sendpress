@@ -118,15 +118,22 @@ list( $display_version ) = explode( '-', $wp_version );
                    <span class="glyphicon glyphicon-link fa-5x"></span>
                   </div>
                   <div class="w-50 pull-left text-right">
-                    <p class="announcement-heading"><?php $c = SendPress_Data::get_clicks_count($report->ID);
-                    if($report){
-                    if(empty( $c )){
-                    	echo "0";
-                    } else {
-                    	echo $c[0]->count;
-                    } 
-                    } else {
-                      echo "0";
+                    <p class="announcement-heading"><?php 
+                    if($report)
+                    {
+                    	$c = SendPress_Data::get_clicks_count($report->ID);
+	                    if(empty( $c ))
+	                    {
+	                    	echo "0";
+	                    }
+		                else
+						{
+		                    	echo $c[0]->count;
+						} 
+                    }
+                    else
+                    {
+	                      echo "0";
                     }?></p>
                     <p class="announcement-text"><?php _e('Clicks in last send', 'sendpress'); ?></p>
                   </div>
