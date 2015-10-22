@@ -1,8 +1,8 @@
 <?php 
 /*
-Plugin Name: SendPress Newsletters
-Version: 0.9.8.6
-Plugin URI: http://sendpress.com
+Plugin Name: Jaiminho (fork from SendPress Newsletters)
+Version: 1.0
+Plugin URI: https://github.com/redelivre/sendpress/
 Description: Easy to manage Newsletters for WordPress. 
 Author: SendPress
 Author URI: http://sendpress.com/
