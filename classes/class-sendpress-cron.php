@@ -50,6 +50,27 @@ class SendPress_Cron {
         if ( false !== strpos( $_SERVER['REQUEST_URI'], '/wp-cron.php' ) ) {
             // make sure a secret string is provided in the ur
             if ( isset( $_GET['action'] ) && $_GET['action'] == 'sendpress' ) {
+            	
+            	$sem = @sem_get( get_current_blog_id() );
+				$sem_a = @sem_acquire($sem);
+				if(!$sem_a)
+				{
+					@sem_release($sem);
+					@sem_remove($sem);
+					return;
+				}
+				$doing_cron = get_option('doing_sendpress_cron', false);
+				if($doing_cron)
+				{
+					@sem_release($sem);
+					@sem_remove($sem);
+					return;
+				}
+
+				update_option('doing_sendpress_cron', true);
+				
+				@sem_release($sem);
+				@sem_remove($sem);
                 
                 SendPress_Queue::send_mail();
                 $count= SendPress_Data::emails_in_queue();
@@ -67,6 +88,7 @@ class SendPress_Cron {
                 $limits = array('dl'=>$emails_per_day,'hl'=>$emails_per_hour,'ds'=>$emails_so_far,'hs'=>$hourly_emails);
 
                 echo json_encode(array( "queue"=>$count,"stuck"=>$stuck,"version"=>SENDPRESS_VERSION,"pro"=> $pro ,"limit" => $limit, 'info'=>$limits  ));
+                update_option('doing_sendpress_cron', false);
                 die();
             }
             

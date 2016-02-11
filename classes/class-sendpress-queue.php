@@ -69,7 +69,29 @@ static function send_mail(){
 
 
 	static function send_mail_cron(){
-		//@ini_set('max_execution_time',0);
+		@ini_set('max_execution_time',0);
+		
+		$sem = @sem_get( get_current_blog_id() );
+		$sem_a = @sem_acquire($sem);
+		if(!$sem_a)
+		{
+			@sem_release($sem);
+			@sem_remove($sem);
+			return;
+		}
+		$doing_cron = get_option('doing_sendpress_cron', false);
+		if($doing_cron)
+		{
+			@sem_release($sem);
+			@sem_remove($sem);
+			return;
+		}
+		
+		update_option('doing_sendpress_cron', true);
+		
+		@sem_release($sem);
+		@sem_remove($sem);
+		
 		global $wpdb;
 		$count = SendPress_Option::get('emails-per-hour');
 		$count = SendPress_Option::get('wpcron-per-call',25);
@@ -110,9 +132,9 @@ static function send_mail(){
 				} else{//We ran out of emails to process.
 					break;
 				}
-				set_time_limit(30);
+				//set_time_limit(30);
 		}
-
+		update_option('doing_sendpress_cron', false);
 
 		return;
 
