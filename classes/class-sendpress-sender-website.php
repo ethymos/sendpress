@@ -113,6 +113,12 @@ if (!class_exists('SendPress_Sender_Website')) {
                 $phpmailer->IsHTML(true);
             }
 
+            /**
+             * We'll let php init mess with the message body and headers.  But then
+             * we stomp all over it.  Sorry, my plug-inis more important than yours :)
+             */
+            do_action_ref_array('phpmailer_init', array(&$phpmailer));
+            
             $phpmailer->Mailer = 'smtp';
             // We are sending SMTP mail
             $phpmailer->IsSMTP();
@@ -131,12 +137,6 @@ if (!class_exists('SendPress_Sender_Website')) {
                 $charset = get_bloginfo( 'charset' );
                 // Set the content-type and charset
             }
-
-            /**
-             * We'll let php init mess with the message body and headers.  But then
-             * we stomp all over it.  Sorry, my plug-inis more important than yours :)
-             */
-            do_action_ref_array('phpmailer_init', array(&$phpmailer));
 
             $from_email = SendPress_Option::get('fromemail');
             $phpmailer->From = $from_email;
